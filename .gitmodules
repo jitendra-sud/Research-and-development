@@ -1,3 +1,6 @@
 [submodule "age-gender"]
 	path = age-gender
 	url = https://github.com/tae898/age-gender.git
+[submodule "face-detection"]
+	path = face-detection
+	url = https://github.com/tae898/face-detection-recognition.git
