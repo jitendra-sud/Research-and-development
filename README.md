@@ -77,6 +77,21 @@ eg,  W2 new = W2 - n*d(loss)/dw2
 
 Optimizer: Gradient Descent.
 
+_______________________________________________________
+
+19-07-2022:
+
+Chain rule in back propagation
+Vanishing Gradient Problem
+Exploding Gradient Problem
+
+_______________________________________________________
+
+20-07-2022:
+
+Drop Out 
+Regularization
+Leaky RelU
 
 
 
