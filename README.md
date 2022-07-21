@@ -93,6 +93,14 @@ Drop Out
 Regularization
 Leaky RelU
 
+_______________________________________________________
+
+21-07-2022:
+
+Some Activations: tanh, relU, preRelu, SoftMax
+Weight Initialization
+
+
 
 
 
