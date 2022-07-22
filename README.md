@@ -101,6 +101,13 @@ Some Activations: tanh, relU, preRelu, SoftMax
 Weight Initialization
 
 
+_______________________________________________________
+
+22-07-2022:
+
+Gradient Descent , Stochastic Gradient Descent, Mini batch SGD.
+
+
 
 
 
