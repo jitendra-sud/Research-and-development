@@ -44,14 +44,14 @@
         </div>
       </nav>
     <div class="container">
-        <form method="POST", action="/detect">
+        <form method="POST", action="/video">
             <div  class="input-group mb-3 mt-3">
                 <input name="img" type="file" accept="image*/" class="form-control" id="inputGroupFile02">
                 <input type="submit" name="Process" >
               </div>
         </form>
         <div style="justify-content:center ; margin-top: 30px ; display: flex;">
-          <img src="{{url_for('video')}}">
+          <img style="border: 10px black double;" src="{{url_for('video')}}">
         </div>
     </div>
 

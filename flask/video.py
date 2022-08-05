@@ -3,6 +3,7 @@ import argparse
 import imutils
 import time
 import cv2
+from imutils .video import videostream
 
 class Video(object):
     def __init__(self):
@@ -23,14 +24,14 @@ class Video(object):
 
         vid=frame
         while True:
-            ret,fr = vid.read()
-            fr=imutils.resize(fr,width=400)
+            fr = vid
+            fr=imutils.resize(fr,width=600)
 
             (h,w) = fr.shape[:2]
-            blob = cv2.dnn.blobFromeImage(cv2.resize(fr,(300,300)), 1.0, (300,300), (104.0,177.0,123.0))
+            blob = cv2.dnn.blobFromImage(cv2.resize(fr,(300,300)), 1.0, (300,300), (104.0,177.0,123.0))
 
             net.setInput(blob)
-            detections = net.forword()
+            detections = net.forward()
 
             for i in range(0, detections.shape[2]):
                 confidence = detections[0,0,i,2]
