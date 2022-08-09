@@ -12,6 +12,7 @@ class Video(object):
         self.video.release() 
     def get_frame(self):
         ret,frame = self.video.read()
+
         args= {
             "prototxt":"deploy.prototxt.txt",
             "model":"res10_300x300_ssd_iter_140000.caffemodel",
@@ -21,8 +22,8 @@ class Video(object):
         net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 
         print("[INFO] starting video stream...")
-
         vid=frame
+
         while True:
             fr = vid
             fr=imutils.resize(fr,width=600)
@@ -45,14 +46,14 @@ class Video(object):
                 text = "{:.2f}%".format(confidence * 100)
                 y = startY - 10 if startY -10 > 10 else startY + 10 
                 cv2.rectangle(fr, (startX,startY), (endX,endY), (0, 0, 255), 2)
-                cv2.putText(fr, text, (startX, y), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
-
+                cv2.putText(fr, text, (startX, y), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)            
+        
             ret,jpg = cv2.imencode('.jpg',fr)
             return jpg.tobytes()
 
 
         
-            
+
 
 
 
