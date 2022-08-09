@@ -10,11 +10,11 @@ class Video(object):
     def get_frame(self):
         ret,frame = self.video.read()
 
-        # age_weights = "age_deploy.prototxt"
-        # age_config = "age_net.caffemodel"
-        # ageNet = cv2.dnn.readNet(age_config, age_weights)
-        # ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
-        # mssg = 'Face Detected'
+        age_weights = "age_deploy.prototxt"
+        age_config = "age_net.caffemodel"
+        ageNet = cv2.dnn.readNet(age_config, age_weights)
+        ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
+        mssg = 'Face Detected'
 
         args= {
             "prototxt":"deploy.prototxt.txt",
