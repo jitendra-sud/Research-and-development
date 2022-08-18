@@ -14,7 +14,7 @@ class Video(object):
         age_config = "age_net.caffemodel"
         ageNet = cv2.dnn.readNet(age_config, age_weights)
         ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
-        mssg = 'Face Detected'
+        # mssg = 'Face Detected'
 
         args= {
             "prototxt":"deploy.prototxt.txt",
@@ -29,7 +29,7 @@ class Video(object):
 
         while True:
             fr = vid
-            fr=imutils.resize(fr,width=800)
+            fr=imutils.resize(fr,width=700)
 
             (h,w) = fr.shape[:2]
             blob = cv2.dnn.blobFromImage(cv2.resize(fr,(300,300)), 1.0, (300,300), (104.0,177.0,123.0))
@@ -47,9 +47,7 @@ class Video(object):
                 (startX, startY, endX, endY) = box.astype("int")
 
                 face = fr[startY:endY, startX:endX]
-                faceBlob = cv2.dnn.blobFromImage(face, 1.0, (227, 227),
-			    (78.4263377603, 87.7689143744, 114.895847746),
-		    	swapRB=False)
+                faceBlob = cv2.dnn.blobFromImage(face, 1.0, (227, 227),(78.4263377603, 87.7689143744, 114.895847746),swapRB=False)
 
                 ageNet.setInput(faceBlob)
                 preds = ageNet.forward()
