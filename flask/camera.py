@@ -29,7 +29,7 @@ class Video(object):
 
         while True:
             fr = vid
-            fr=imutils.resize(fr,width=700)
+            fr=imutils.resize(fr,width=600)
 
             (h,w) = fr.shape[:2]
             blob = cv2.dnn.blobFromImage(cv2.resize(fr,(300,300)), 1.0, (300,300), (104.0,177.0,123.0))
@@ -47,7 +47,7 @@ class Video(object):
                 (startX, startY, endX, endY) = box.astype("int")
 
                 face = fr[startY:endY, startX:endX]
-                faceBlob = cv2.dnn.blobFromImage(face, 1.0, (227, 227),(78.4263377603, 87.7689143744, 114.895847746),swapRB=False)
+                faceBlob = cv2.dnn.blobFromImage(face, 1.0, (227, 227),(104.0, 177.0, 123.0))
 
                 ageNet.setInput(faceBlob)
                 preds = ageNet.forward()
