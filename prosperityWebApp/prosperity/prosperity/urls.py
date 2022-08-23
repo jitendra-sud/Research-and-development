@@ -7,5 +7,7 @@ admin.site.index_title = "Welcome to Prosperity Portal"
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("",include('home.urls'))
+    path("",include('home.urls')),
+    path("otp",include('home.urls')),
+    path("otp/yourself",include('home.urls'))
 ]

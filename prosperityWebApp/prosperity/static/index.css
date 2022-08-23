@@ -84,6 +84,16 @@
   margin-top: 0%;
 }
 
+.rd5{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+text-transform: capitalize;
+color: #8381F7;
+
+}
 .r1 {
   height: 750px;
   width: 600px;
@@ -109,7 +119,6 @@
   align-items: center;
   padding: 0px;
   gap: 10px;
-  margin-left: 15%;
   margin-top: 10%;
   margin-bottom: 4%;
   width: 320px;
@@ -122,81 +131,129 @@
   border: #F6F9FF solid 2px;
 }
 
-.para{
+.para {
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 24px;
-text-transform: capitalize;
-color: #F6F9FF;
-margin-top: 10px;
-
-}
-
-.rd5{
-margin-left: 35%;
-margin-top: 30%;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 24px;
-color: #8381F7;
-
-}
-
-.tnc1{
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-text-align: center;
-color: #5B6CAC;
-margin-top: 5%;
-margin-bottom: 0%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #F6F9FF;
+  margin-top: 10px;
+
 }
 
-.tnc2{
+.rd5 {
+  margin-left: 30%;
+  margin-top: 30%;
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-text-align: center;
-color: #5B6CAC;
-margin: 0%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #8381F7;
+
 }
 
-.app-button{
+.tnc1 {
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-margin-left: 27%;
-margin-top: 20px;
-color: #5B6CAC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #5B6CAC;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+.tnc2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #5B6CAC;
+  margin: 0%;
+}
+
+.app-button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 27%;
+  margin-top: 20px;
+  color: #5B6CAC;
 
 }
 
-#ps1{
- width: 172px;
- /* text-align: right; */
+#ps1 {
+  width: 172px;
+  /* text-align: right; */
 }
 
-.playstore1{
-width: 171.28px;
-height: 50px;
-left: 809px;
-top: 834px;
-
-}
-.playstore2{
+.playstore1 {
   width: 171.28px;
   height: 50px;
   left: 809px;
   top: 834px;
-  }
+
+}
+
+.playstore2 {
+  width: 171.28px;
+  height: 50px;
+  left: 809px;
+  top: 834px;
+}
+
+
+.inputs input {
+  width: 40px;
+  height: 40px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0
+}
+
+.card-2 {
+  background-color: #fff;
+  padding: 10px;
+  width: 350px;
+  height: 100px;
+  bottom: -50px;
+  left: 20px;
+  position: absolute;
+  border-radius: 5px
+}
+
+.card-2 .content {
+  margin-top: 50px
+}
+
+.card-2 .content a {
+  color: red
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid red
+}
+
+.validate {
+  border-radius: 20px;
+  height: 40px;
+  background-color: red;
+  border: 1px solid red;
+  width: 140px
+}
+
