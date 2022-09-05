@@ -9,5 +9,8 @@ def otp(request):
 def yourself(request):
     return render(request, 'yourself.html')
 
+def profileDetails(request):
+    return render(request, 'profileDetails.html')
+
 
 # Create your views here.
