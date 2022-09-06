@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -28,7 +28,7 @@
         </button>
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">		
             <div  style="margin-right:120px" class="navbar-nav ml-auto">
-                <a style="color:#5B6CAC" href="#" class="nav-item nav-link active"><img src="{% static "media/Ellipse 78.jpg" %}" alt=""><span>Home</span></a>
+                {% comment %} <a style="color:#5B6CAC" href="#" class="nav-item nav-link active"><img src="{% static "media/Ellipse 78.jpg" %}" alt=""><span>Home</span></a> {% endcomment %}
                 <a style="color:#5B6CAC" href="#" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Home</span></a>
                 <a style="color:#5B6CAC" href="#" class="nav-item nav-link"><i class="fa fa-gears"></i><span>My Trends</span></a>
                 <a style="color:#5B6CAC" href="#" class="nav-item nav-link"><i class="fa fa-users"></i><span>Measure</span></a>
