@@ -13,6 +13,7 @@ urlpatterns = [
     path("otp",include('home.urls')),
     path("otp/yourself",include('home.urls')),
     path("profileDetails",include('home.urls')),
+    path("profileDocuments",include('home.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

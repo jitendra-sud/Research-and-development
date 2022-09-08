@@ -12,5 +12,8 @@ def yourself(request):
 def profileDetails(request):
     return render(request, 'profileDetails.html')
 
+def profileDocuments(request):
+    return render(request, 'profileDocuments.html')
+
 
 # Create your views here.
