@@ -146,13 +146,16 @@ input[type="text"]::placeholder {
 
 .grid-container.rightgrid .grid-item {
   width: 360.09px;
-height: 77.54px;
-left: 577px;
-top: 436px;
-margin-bottom: 50px;
-background: #FFFFFF;
-box-shadow: 0px 2.7931px 27.931px rgba(44, 88, 255, 0.2);
-border-radius: 6.98276px;
+  height: 77.54px;
+  left: 577px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 436px;
+  margin-bottom: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 2.7931px 27.931px rgba(44, 88, 255, 0.2);
+  border-radius: 6.98276px;
 }
 
 .grid-container.rightgrid .grid-item p {
@@ -168,12 +171,12 @@ border-radius: 6.98276px;
   color: #475897;
 }
 
-.grid-container.rightgrid .grid-item .grid-container .grid-item{
+.grid-container.rightgrid .grid-item .grid-container .grid-item {
   display: grid;
   grid-template-columns: auto auto auto;
 }
 
-.grid-container.rightgrid .grid-item .grid-container .grid-item i{
+.grid-container.rightgrid .grid-item .grid-container .grid-item i {
   margin-top: 10px;
   font-size: 35px;
   color: #c8c8dc;
@@ -181,27 +184,282 @@ border-radius: 6.98276px;
 }
 
 
-.grid-container.middel{
+.grid-container.middel {
   display: grid;
   grid-template-columns: auto;
 }
 
-.grid-container.rightgrid .grid-item .grid-container .grid-item .grid-container.middel .first{
+.grid-container.rightgrid .grid-item .grid-container .grid-item .grid-container.middel .first {
   margin-top: 10px;
   margin-left: -23px;
   font-size: 12px;
   color: #c8c8dc;
 }
 
-#first{
+#first {
   margin-top: 10px;
   margin-left: -6px;
   font-size: 12px;
   color: #c8c8dc;
 }
 
-#second{
+#second {
   font-size: 22px;
   margin-top: -15px;
   margin-left: -8px;
+}
+
+#myCoverage {
+  display: grid;
+  margin-left: 135px;
+  margin-top: 153px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 14.6px;
+  grid-template-rows: auto;
+  width: 575.18px;
+  height: 528px;
+  background: #FFFFFF;
+  box-shadow: 0px 2.92013px 29.2013px rgba(44, 88, 255, 0.2);
+  border-radius: 14.6006px;
+}
+
+.grid-item.grid-container.right {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+#para {
+  width: 83px;
+  height: 24px;
+  margin-left: 46.09px;
+  margin-top: 18.16px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.0607px;
+  line-height: 24px;
+  color: #5B6CAC;
+}
+
+.grid-item.grid-container.protection {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 52px;
+  margin-top: -90px;
+  width: 500px;
+  height: 174px;
+}
+
+#upperRight {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 281.83px;
+  height: 53.54px;
+  background: #FFFFFF;
+  box-shadow: 0px 2.67678px 40.1518px rgba(138, 132, 255, 0.1);
+  border-radius: 6.69196px;
+  margin-left: 53px;
+}
+
+#lowerRight {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 257.83px;
+  height: 53.54px;
+  background: #FFFFFF;
+  box-shadow: 0px 2.67678px 40.1518px rgba(138, 132, 255, 0.1);
+  border-radius: 6.69196px;
+  margin-left: 53px;
+}
+
+
+
+#upperPara {
+  width: 150px;
+  height: 16px;
+  margin-left: -64px;
+  margin-top: 16px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.7071px;
+  line-height: 16px;
+  color: #5B6CAC;
+  margin-bottom: 0px;
+}
+
+#upperParaicon {
+  opacity: 2;
+  /* border: 1.33839px solid #5B6CAC; */
+  transform: rotate(45deg);
+  font-size: 18px;
+  margin-left: -91px;
+  margin-right: 36px;
+  color: #5B6CAC;
+}
+
+#sumAssured {
+  width: 55px;
+  height: 12px;
+  margin-left: -64px;
+  margin-top: -35px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.03035px;
+  line-height: 12px;
+  color: #5B6CAC;
+
+  opacity: 0.5;
+}
+
+#amount {
+  width: 82px;
+  height: 24px;
+  /* left: 230.85px;
+top: 112.79px; */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.0607px;
+  line-height: 24px;
+
+  /* identical to box height */
+  margin-top: -35px;
+  color: #5B6CAC;
+
+
+}
+
+#middleright {
+  width: 26px;
+height: 16px;
+margin-top: 24px;
+margin-left: 16px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 10.7071px;
+line-height: 16px;
+color: #5B6CAC;
+margin-right: 0px;
+}
+
+#line{
+    /* border-left: 6px solid green; */
+    height: 500px;
+    height: 60px;
+border-left: 2px solid rgba(91, 108, 172, 0.2);
+margin-left: 0px;
+}
+
+#middlerightlower{
+  width: 26px;
+height: 16px;
+margin-top: 25px;
+margin-left: -171px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 10.7071px;
+line-height: 16px;
+
+color: #5B6CAC;
+}
+
+#linelower{
+  height: 500px;
+    height: 60px;
+border-left: 2px solid rgba(91, 108, 172, 0.2);
+margin-left: -136px;
+}
+
+#lineicon{
+  font-size: 43px;
+margin-left: -22px;
+color: #1dd91d;
+}
+
+#upperpremium{
+  width: 86px;
+  height: 12px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.03035px;
+  line-height: 12px;
+  
+  color: #5B6CAC;
+  margin-top: 16px;
+  opacity: 0.5;
+  margin-bottom: 7px;
+}
+
+#upperdue{
+  width: 90px;
+  height: 16px;
+  left: 388.78px;
+  top: 118.14px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.7071px;
+  line-height: 16px;
+  
+  /* identical to box height */
+  
+  color: rgba(91, 108, 172, 0.5);
+}
+
+#lowerpremium{
+  width: 86px;
+  height: 12px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.03035px;
+  line-height: 12px;
+  
+  color: #5B6CAC;
+  margin-top: 16px;
+  opacity: 0.5;
+  margin-bottom: 7px;
+}
+
+#lowerdue{
+  width: 90px;
+  height: 16px;
+  left: 388.78px;
+  top: 118.14px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.7071px;
+  line-height: 16px;
+  
+  /* identical to box height */
+  
+  color: rgba(91, 108, 172, 0.5);
+}
+
+#xyz{
+  width: 100px;
+margin-left: 184px;
+margin-top: -71px;
+}
+
+#bold {
+  font-size: 12px;
+  color: rgba(13, 13, 15, 0.5);
 }

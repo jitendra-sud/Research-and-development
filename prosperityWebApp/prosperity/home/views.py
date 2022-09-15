@@ -15,5 +15,8 @@ def profileDetails(request):
 def profileDocuments(request):
     return render(request, 'profileDocuments.html')
 
+def profileCoverage(request):
+    return render(request, 'profileCoverage.html')
+
 
 # Create your views here.

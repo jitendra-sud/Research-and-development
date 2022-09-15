@@ -7,5 +7,6 @@ urlpatterns = [
     path("otp",views.otp,name = 'otp'),
     path("otp/yourself",views.yourself, name = 'yourself'),
     path("profileDetails",views.profileDetails, name = 'profileDetails'),
-    path("profileDocuments",views.profileDocuments, name = 'profileDocuments')
+    path("profileDocuments",views.profileDocuments, name = 'profileDocuments'),
+    path("profileCoverage",views.profileCoverage, name = 'profileCoverage'),
 ]
