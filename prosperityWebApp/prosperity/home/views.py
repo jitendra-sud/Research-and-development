@@ -18,5 +18,9 @@ def profileDocuments(request):
 def profileCoverage(request):
     return render(request, 'profileCoverage.html')
 
+def profileNotification(request):
+    return render(request, 'profileNotification.html')
+
+
 
 # Create your views here.

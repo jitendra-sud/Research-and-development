@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% include 'navbar.html' %}
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %} <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="grid-container boarder" style="height:188px; background:#8381F7">
+        <div class="grid-item"><img class="pic" src="{% static "media/Rectangle 199.jpg" %}" alt=""></div>
+        <div class="grid-item"><p class="name">Swapnil Nikam</p></div>
+        <div class="grid-item"><p class="des">UX Designer</p></div>
+    </div>
+    <div class="grid-container lower">
+        <div style="width:120px; height: 1600px; background:#8381F7"></div>
+
+        <div class="grid-container leftbar">
+            <a class="grid-item" href="/profileDetails"><i class="bi-credit-card-2-front-fill"></i>Pesonal Details</a>
+            <a href="/profileDocuments" class="grid-item"><i  class="bi-card-heading"></i>Documents</a>
+            <a class="grid-item" ><i  class="bi-shield-fill-plus"></i>My Coverage</a>
+            <a style="background: #ffff" href="/profileCoverage" href="" class="grid-item" ><i  class="bi-bell"></i>Notification</a>
+            <a href="/profileNotification" class="grid-item" ><i  class="bi-cash"></i>Manage Payments</a>
+            <a href="" class="grid-item" ><i  class="bi-chat-left-fill"></i>Feedback</a>
+            <a href="" class="grid-item" ><i  class="bi-info-circle"></i>About Us</a>
+            <div style="margin-top: -10px"><button class="logout"><a href="/otp"><p style="margin-top:10px">Log Out</p></a></button></div>
+       </div>
+       
+       <div id="notification_main" class="grid-container">
+
+            <div id="notification" class="grid-item grid-container">
+                <p id="today" class="grid-item">Today</p>
+                <div id="box" class="grid-item grid-container">
+                     <div id="not_top" class="grid-item grid-container">
+                      <p class="grid-item" id="Health">Health</p>
+                      <i class="grid-item bi-dot" id="not_icon"></i>
+                      <p class="grid-item" id="not_time">9:01 AM</p>
+                     </div>  
+                     <div id="not_middle" class="grid-item grid-container">
+                          <img class="grid-item" id="not_img" src="{% static "media/heart.png" %}" alt="">
+                          <p class="grid-item" id="not_heart_Rate">Check Your <b>Heart Rate</b></p>
+                     </div>  
+                     <div class="grid-item">
+                      <P id="not_bottom_para">Checking your heart rate in the morning is the best practise</P>
+                     </div>  
+                </div>
+            </div>
+    
+            <div id="notification_lower" class="grid-item grid-container">
+                <p id="today" class="grid-item">This Week</p>
+                <div style="height: 129.97px;" id="box" class="grid-item grid-container">
+                  <div id="not_top" class="grid-item grid-container">
+                   <p class="grid-item" id="Health">Health</p>
+                   <i class="grid-item bi-dot" id="not_icon"></i>
+                   <p class="grid-item" id="not_time">10:00 PM</p>
+                  </div>  
+                  <div id="not_middle" class="grid-item grid-container">
+                       <img class="grid-item" id="not_img" src="{% static "media/wallet.png" %}" alt="">
+                       <p class="grid-item" id="not_heart_Rate">Your expense <b>Exceeded</b> the Limit </p>
+                       <p id="not_new" class="grid-item">New</p>
+                  </div>  
+             </div>
+            </div> 
+
+            <div style="margin-top:-339px;" id="notification_lower" class="grid-item grid-container">
+                {% comment %} <p id="today" class="grid-item">This Week</p> {% endcomment %}
+                <div id="box" class="grid-item grid-container">
+                  <div id="not_top" class="grid-item grid-container">
+                   <p class="grid-item" id="Health">Covrage</p>
+                   <i style="margin-left: -117px;" class="grid-item bi-dot" id="not_icon"></i>
+                   <p style="margin-left: -229px;" class="grid-item" id="not_time">9:00 AM</p>
+                  </div>  
+                  <div style="margin-top: -9px;" id="not_middle" class="grid-item grid-container">
+                       <img style=" width: 42px; height: 54px; margin-left: 11px;"  class="grid-item" id="not_img" src="{% static "media/Group191.png" %}" alt="">
+                       <p style="width: 308px;" class="grid-item" id="not_heart_Rate">Your Policy <b style="color:grey">Due Date</b> is Nearby</p>
+                  </div>  
+                  <div class="grid-item">
+                    <P style="font-size:15.598px; margin-top: -35px;" id="not_bottom_para">Your policy SUD life E-Wealth Royale Due date is 25 april 22 with a Primiem of
+                        12,866</P>
+                   </div> 
+             </div>
+            </div> 
+
+            <div style="margin-top: -439px;" id="notification_lower" class="grid-item grid-container">
+                <p id="today" class="grid-item">Last Week</p>
+                <div style="height: 129.97px;" id="box" class="grid-item grid-container">
+                  <div id="not_top" class="grid-item grid-container">
+                   <p class="grid-item" id="Health">Health</p>
+                   <i class="grid-item bi-dot" id="not_icon"></i>
+                   <p class="grid-item" id="not_time">10:00 PM</p>
+                  </div>  
+                  <div id="not_middle" class="grid-item grid-container">
+                       <img class="grid-item" id="not_img" src="{% static "media/wallet.png" %}" alt="">
+                       <p class="grid-item" id="not_heart_Rate">Your expense <b>Exceeded</b> the Limit </p>
+                       <p id="not_new" class="grid-item">New</p>
+                  </div>  
+             </div>
+            </div> 
+       </div>  
+       
+
+    </div>
+      
+</body>
+</html>
