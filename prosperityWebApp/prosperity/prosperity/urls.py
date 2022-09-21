@@ -16,6 +16,10 @@ urlpatterns = [
     path("profileDocuments",include('home.urls')),
     path("profileCoverage",include('home.urls')),
     path("profileNotification",include('home.urls')),
+    path("profilePayments",include('home.urls')),
+    path("profilePaymentsAddCards",include('home.urls')),
+    path("profilePaymentsAddBanks",include('home.urls')),
+    
 ]
 
 urlpatterns += staticfiles_urlpatterns()

@@ -21,6 +21,14 @@ def profileCoverage(request):
 def profileNotification(request):
     return render(request, 'profileNotification.html')
 
+def profilePayments(request):
+    return render(request, 'profilePayments.html')
 
+def profilePaymentsAddCards(request):
+    return render(request, 'profilePaymentsAddCards.html')
+
+def profilePaymentsAddBanks(request):
+    return render(request, 'profilePaymentsAddBanks.html')
 
 # Create your views here.
+

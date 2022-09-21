@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% include 'navbar.html' %}
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %} <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'profilePaymentsAddCards.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="grid-container boarder" style="height:188px; background:#8381F7">
+        <div class="grid-item"><img class="pic" src="{% static "media/Rectangle 199.jpg" %}" alt=""></div>
+        <div class="grid-item"><p class="name">Swapnil Nikam</p></div>
+        <div class="grid-item"><p class="des">UX Designer</p></div>
+    </div>
+    <div class="grid-container lower">
+        <div style="width:120px; height: 1600px; background:#8381F7"></div>
+
+        <div class="grid-container leftbar">
+            <a class="grid-item" href="/profileDetails"><i class="bi-credit-card-2-front-fill"></i>Pesonal Details</a>
+            <a href="/profileDocuments" class="grid-item"><i  class="bi-card-heading"></i>Documents</a>
+            <a class="grid-item" href="/profileCoverage" ><i  class="bi-shield-fill-plus"></i>My Coverage</a>
+            <a href="/profileNotification"  class="grid-item" ><i  class="bi-bell"></i>Notification</a>
+            <a style="background: #ffff" href="/profilePayments" class="grid-item" ><i  class="bi-cash"></i>Manage Payments</a>
+            <a href="" class="grid-item" ><i  class="bi-chat-left-fill"></i>Feedback</a>
+            <a href="" class="grid-item" ><i  class="bi-info-circle"></i>About Us</a>
+            <div style="margin-top: -10px"><button class="logout"><a href="/otp"><p style="margin-top:10px">Log Out</p></a></button></div>
+        </div>
+        
+        <div id="add_card_main" class="grid-container">
+            <div class="grid-item">
+                <h1 id="add_card">Add Card</h1>
+            </div>
+
+            <div class="grid-item grid-container">
+                <p id="add_card_para" class="grid-item">Name on card</p> 
+                <input id="add_card_input" type="text" class="grid-item" placeHolder="Swapnil Nikam">     
+            </div>
+
+            <div class="grid-item grid-container">
+                <p id="add_card_para" class="grid-item">Card Number</p> 
+                <input id="add_card_input" type="Number" class="grid-item" placeHolder="22222XXXXXXX">     
+            </div>
+
+            <div id="add_card_third" class="grid-item grid-container">
+                <div style="width:200px;" class="grid-item grid-container">
+                    <p style="width:150px;" id="add_card_para" class="grid-item">Expiry Date</p> 
+                    <input style="width:200px;color: #A8B4E1; " id="add_card_input" type="date" class="grid-item" placeHolder="05/06/1966">     
+                </div>
+                <div class="grid-item grid-container">
+                    <p style="width:200px;" id="add_card_para" class="grid-item">CVV</p> 
+                    <input style="width:162px;" id="add_card_input" type="Number" class="grid-item" placeHolder="XXX">     
+                </div>
+            </div>
+
+            <div class="grid-item">
+                 <p id="add_card_bt_para">Your card will be securely saved with your bank for future payments</p>
+            </div>
+
+            <div class="grid-item">
+                <button id="btn" >Save Your Card</button>
+            </div>
+            
+        </div> 
+        
+
+    </div>
+      
+</body>
+</html>

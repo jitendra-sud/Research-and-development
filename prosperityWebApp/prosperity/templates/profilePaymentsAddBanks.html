@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% include 'navbar.html' %}
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %} <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'profilePaymentsAddCards.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="grid-container boarder" style="height:188px; background:#8381F7">
+        <div class="grid-item"><img class="pic" src="{% static "media/Rectangle 199.jpg" %}" alt=""></div>
+        <div class="grid-item"><p class="name">Swapnil Nikam</p></div>
+        <div class="grid-item"><p class="des">UX Designer</p></div>
+    </div>
+    <div class="grid-container lower">
+        <div style="width:120px; height: 1600px; background:#8381F7"></div>
+
+        <div class="grid-container leftbar">
+            <a class="grid-item" href="/profileDetails"><i class="bi-credit-card-2-front-fill"></i>Pesonal Details</a>
+            <a href="/profileDocuments" class="grid-item"><i  class="bi-card-heading"></i>Documents</a>
+            <a class="grid-item" href="/profileCoverage" ><i  class="bi-shield-fill-plus"></i>My Coverage</a>
+            <a href="/profileNotification"  class="grid-item" ><i  class="bi-bell"></i>Notification</a>
+            <a style="background: #ffff" href="/profilePayments" class="grid-item" ><i  class="bi-cash"></i>Manage Payments</a>
+            <a href="" class="grid-item" ><i  class="bi-chat-left-fill"></i>Feedback</a>
+            <a href="" class="grid-item" ><i  class="bi-info-circle"></i>About Us</a>
+            <div style="margin-top: -10px"><button class="logout"><a href="/otp"><p style="margin-top:10px">Log Out</p></a></button></div>
+        </div>
+        
+        <div id="add_bank_main" class="grid-container">
+            <div class="grid-item">
+                <h1 id="add_card">Add Banks</h1>
+            </div>
+
+            <div class="grid-item grid-container">
+                <p style="margin-bottom: 23px; color:#2742AA" id="add_card_para" class="grid-item">Popular Banks</p> 
+                <div id="popular" class="grid-item grid-container">
+                    <div id="inner_div" class="grid-item grid container">
+                        <img style="margin-top: 14px;" class="grid-item" src="{% static "media/bank1.png" %}" alt="">
+                        <a style="margin-top: 14px;" class="grid-item" href="">Union Bank OF India</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        <img class="grid-item" src="{% static "media/bank2.png" %}" alt="">
+                        <a class="grid-item" href="">Axis Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        <img class="grid-item" src="{% static "media/bank3.png" %}" alt="">
+                        <a class="grid-item" href="">ICICI Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        <img class="grid-item" src="{% static "media/bank4.png" %}" alt="">
+                        <a class="grid-item" href="">HDFC Bank</a>
+                        {% comment %} <label class="grid-item" for="">HDFC Bank</label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        <img style="margin-botton: 10px;" class="grid-item" src="{% static "media/bank5.png" %}" alt="">
+                        <a style="margin-botton: 10px;" class="grid-item" href="">SBI Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                </div>     
+            </div>
+
+            <div class="grid-item grid-container">
+                <p style="margin-bottom: 23px; color:#2742AA;  margin-top:44px" id="add_card_para" class="grid-item">Other Banks</p> 
+                <div id="popular_lower" class="grid-item grid-container">
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img style="margin-top: 14px;" class="grid-item" src="{% static "media/bank1.png" %}" alt=""> {% endcomment %}
+                        <a style="margin-top: 14px;" class="grid-item" href="">Axis Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img class="grid-item" src="{% static "media/bank2.png" %}" alt=""> {% endcomment %}
+                        <a class="grid-item" href="">Bank Of India</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img class="grid-item" src="{% static "media/bank3.png" %}" alt=""> {% endcomment %}
+                        <a class="grid-item" href="">Bank Of India</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img class="grid-item" src="{% static "media/bank4.png" %}" alt=""> {% endcomment %}
+                        <a class="grid-item" href="">Central Bank Of India</a>
+                        {% comment %} <label class="grid-item" for="">HDFC Bank</label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img style="margin-botton: 10px;" class="grid-item" src="{% static "media/bank5.png" %}" alt=""> {% endcomment %}
+                        <a style="margin-botton: 10px;" class="grid-item" href="">Corporation Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img class="grid-item" src="{% static "media/bank2.png" %}" alt=""> {% endcomment %}
+                        <a class="grid-item" href="">Federal Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img class="grid-item" src="{% static "media/bank2.png" %}" alt=""> {% endcomment %}
+                        <a class="grid-item" href="">HDFC Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img class="grid-item" src="{% static "media/bank2.png" %}" alt=""> {% endcomment %}
+                        <a class="grid-item" href="">ICICI Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img class="grid-item" src="{% static "media/bank2.png" %}" alt=""> {% endcomment %}
+                        <a class="grid-item" href="">Indian Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                    <hr>
+                    <div id="inner_div" class="grid-item grid container">
+                        {% comment %} <img class="grid-item" src="{% static "media/bank2.png" %}" alt=""> {% endcomment %}
+                        <a class="grid-item" href="">Induslnd Bank</a>
+                        {% comment %} <label class="grid-item" for=""></label> {% endcomment %}
+                    </div>
+                </div>     
+            </div>
+            
+        </div> 
+        
+
+    </div>
+      
+</body>
+</html>
