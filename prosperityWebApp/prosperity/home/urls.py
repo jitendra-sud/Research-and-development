@@ -13,4 +13,6 @@ urlpatterns = [
     path("profilePayments",views.profilePayments, name = 'profilePayments'),
     path("profilePaymentsAddCards",views.profilePaymentsAddCards, name = 'profilePaymentsAddCards'),
     path("profilePaymentsAddBanks",views.profilePaymentsAddBanks, name = 'profilePaymentsAddBanks'),
+    path("profileFeedback",views.profileFeedback, name = 'profileFeedback'),
+    path("profileAbout",views.profileAbout, name = 'profileAbout'),
 ]

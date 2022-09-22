@@ -30,5 +30,11 @@ def profilePaymentsAddCards(request):
 def profilePaymentsAddBanks(request):
     return render(request, 'profilePaymentsAddBanks.html')
 
+def profileFeedback(request):
+    return render(request, 'profileFeedback.html')
+
+def profileAbout(request):
+    return render(request, 'profileAbout.html')
+
 # Create your views here.
 

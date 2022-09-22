@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% include 'navbar.html' %}
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %} <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'profileFeedback.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body style="background: #F6F9FF">
+    <div class="grid-container boarder" style="height:188px; background:#8381F7">
+        <div class="grid-item"><img class="pic" src="{% static "media/Rectangle 199.jpg" %}" alt=""></div>
+        <div class="grid-item"><p class="name">Swapnil Nikam</p></div>
+        <div class="grid-item"><p class="des">UX Designer</p></div>
+    </div>
+    <div class="grid-container lower">
+        <div style="width:120px; height: 900px; background:#8381F7"></div>
+        
+        <div class="grid-container leftbar">
+             <a class="grid-item" href="/profileDetails"><i class="bi-credit-card-2-front-fill"></i>Pesonal Details</a>
+             <a href="/profileDocuments" class="grid-item"><i  class="bi-card-heading"></i>Documents</a>
+             <a href="/profileCoverage" class="grid-item" ><i  class="bi-shield-fill-plus"></i>My Coverage</a>
+             <a href="/profileNotification" class="grid-item" ><i  class="bi-bell"></i>Notification</a>
+             <a href="/profilePayments" class="grid-item" ><i  class="bi-cash"></i>Manage Payments</a>
+             <a style="background:#ffff" href="/profileFeedback" class="grid-item" ><i  class="bi-chat-left-fill"></i>Feedback</a>
+             <a href="/profileAbout" class="grid-item" ><i  class="bi-info-circle"></i>About Us</a>
+             <div style="margin-top: -10px"><button class="logout"><a href="/otp"><p style="margin-top:10px">Log Out</p></a></button></div>
+        </div>
+          
+        <div id="feedback_main" class="grid-container">
+            <div class="grid-item">
+                <p id="para_one">Are you Satisfied with the service ?</p>
+            </div>
+            <div id="stars_div" class="grid-item grid-container">
+                <i class="bi-star-fill grid-item"></i>
+                <i class="bi-star-fill grid-item"></i>
+                <i class="bi-star-fill grid-item"></i>
+                <i class="bi-star-fill grid-item"></i>
+                <i class="bi-star-fill grid-item"></i>
+            </div>
+            <div class="grid-item">
+                <p id="para_two"><b>Tell as what can we improve</b></p>
+            </div>
+            <div style="margin-top: -174px;" id="options" class="grid-item grid-container">
+                <label style="height: 33px; width: 187px;" class="grid-item" for="">Customer Support</label>
+                <label style="height: 33px; background: #fff; color: #8381F7;" class="grid-item" for="">Overall Service</label>
+                <label style="height: 33px; background: #fff; color: #8381F7;" for="">App Experience</label>
+            </div>
+            <div class="grid-item">
+                <input id="feedback_input" type="text" name="" id="" placeHolder="Tell Us what can be improve">
+            </div>
+            <div class="grid-item">
+                <button id="feed_sub" >Submit</button>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+      
+      
+      
+
+</body>
+</html>
