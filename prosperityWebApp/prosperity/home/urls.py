@@ -15,4 +15,5 @@ urlpatterns = [
     path("profilePaymentsAddBanks",views.profilePaymentsAddBanks, name = 'profilePaymentsAddBanks'),
     path("profileFeedback",views.profileFeedback, name = 'profileFeedback'),
     path("profileAbout",views.profileAbout, name = 'profileAbout'),
+    path("bioage",views.bioage, name = 'bioage'),
 ]

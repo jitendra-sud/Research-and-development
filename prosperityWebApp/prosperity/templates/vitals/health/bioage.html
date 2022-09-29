@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %} <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'health.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <style>
+        html, body { height: 100%; width: 100%; margin: 0; }
+    </style>
+</head>
+
+
+<body style="background: #F6F9FF">
+    {% include 'navbar.html' %}
+
+    <div id="health_wealth" class="grid-container">
+        <div class="grid-item grid-container">
+            <a  id="health" class="grid-item" href="">Health</a>
+            <div id="underline" class="grid-item"></div>
+        </div>
+        
+        <a style="  margin-left: -347px; padding-left: 0px " id="wealth" class="grid-item" href="">Wealth</a>
+    </div>
+
+    <hr id="hr">
+    
+    <div id="bioage_lower" class="grid-container">
+        <div id="leftcol" class="grid-item grid-container leftbar_bioage">
+            <a style="background:#ffff" class="grid-item" href="/profileDetails">      <img src="{% static "media/arm.png" %}" alt=""> Bio Age</a>
+            <a href="/profileDocuments" class="grid-item">    <img style="margin-right: 3px;" src="{% static "media/sleeping.png" %}" alt=""> Sleep</a>
+            <a href="/profileCoverage" class="grid-item" >    <img style="margin-right: -2px; margin-left: -4px;" src="{% static "media/heartrate.png" %}" alt=""> Heart Rate</a>
+            <a href="/profileNotification" class="grid-item"> <img style="margin-right: 4px;" src="{% static "media/drop.png" %}" alt=""> Water</a>
+            <a href="/profilePayments" class="grid-item" >    <img style="margin-right: 4px;" src="{% static "media/running.png" %}" alt=""> Steps</a>
+            <a href="/profileFeedback" class="grid-item" >    <img style="margin-right: -8px; margin-left: -4px;" src="{% static "media/drop2.png" %}" alt=""> Blood Sugar</a>
+            <a href="/profileAbout" class="grid-item" >       <img style="margin-right: 18px; margin-left: 5px;" src="{% static "media/drop3.png" %}" alt=""> Blood Pressure</a>
+            <a href="/profileFeedback" class="grid-item" >    <img src="{% static "media/stopwatch.png" %}" alt=""> BMI</a>
+            <a href="/profileAbout" class="grid-item" >       <img style="margin-left: 3px;" src="{% static "media/flame.png" %}" alt=""> Calories</a>       
+        </div>
+          
+        <div id="rightcol_bioage" class="grid-item grid-container">
+            <div id="one" class="grid-item grid-container">
+                   <h1 class="grid-item">Bio Age</h1>
+                   <a  class="grid-item" href=""><i id="one_icon1" class="bi-arrow-repeat"></i></a>
+                   <i id="one_icon2" class="bi-three-dots-vertical grid-item"></i>
+            </div>
+            <div id="two" class="grid-item grid-container">
+                <div class="grid-item">
+                    <p id="two_para1"><b id="age" >32</b> Year Ols</p>
+                    <p id="two_para2">Actual Age: <b id="lower_age">38</b> Years Old </p>
+                </div>
+                <div class="grid-item">
+                    <i id="two_icon" class="bi-shield-check"></i>
+                    <p id="two_para3">You are doing Great</p>
+                </div>
+            </div>
+            <div id="three" class="grid-item">
+                <h3>Highlights</h3>
+            </div>
+            <div id="four" class="grid-item">
+                <p id="four_para1" >Sugar Level</p>
+                <div id="four_div1" class="grid-container">
+                    <p id="four_para2" class="grid-item">Hey, your sugar level is rising that affects you bio age and can cause diabilties sugar related problems</p>
+                    <img id="four_img" class="grid-item" src="{% static "media/emoji.png" %}" alt="">
+                </div>
+                <hr>
+                <p id="four_para3">Daily Target </p>
+                <p id="four_para4"><b >1,732</b>/6000 Steps</p>
+                <div id="four_div2" > <div></div></div>
+            </div>
+
+            <div id="five" class="grid-item grid-container">
+                <div class="grid-item"></div>
+                <div id="five_lower" class="grid-item grid-container">
+                    <div id="five_lower_col1" class="grid-item">
+                        <p>38</p>
+                        <p>30</p>
+                    </div>
+                    <div id="five_lower_col2" class="grid-item">
+                        <input  type="range" orient="vertical" />
+                        <p>1W</p>
+                    </div>
+                    <div id="five_lower_col2" class="grid-item">
+                        <input  type="range" orient="vertical" />
+                        <p>2W</p>
+                    </div>
+                    <div id="five_lower_col2" class="grid-item">
+                        <input  type="range" orient="vertical" />
+                        <p>3W</p>
+                    </div>
+                    <div id="five_lower_col2" class="grid-item">
+                        <input  type="range" orient="vertical" />
+                        <p>4W</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="six" class="grid-item">
+                <div id="six_upper" class="grid-container">
+                    <div style="background: #ffff;margin-left: 59px;" class="grid-item">
+                        <p>Day</p>
+                    </div>
+                    <div style="background: #ffff; margin-left: -3px;" class="grid-item">
+                        <p>Week</p>
+                    </div>
+                    <div class="grid-item">
+                        <p style="color: #ffff; margin-left: -4px;">Month</p>
+                    </div>
+                </div>
+                <div>
+                    <p id="six_lower" >Factor affecting Heart rate</p>
+                </div>
+            </div>
+
+            <div id="seven" class="grid-item grid container">
+                <div class="grid-item grid-container">
+                    <p id="seven_upper_para" class="grid-item">Heart Rate </p>
+                    <img class="grid-item" src="{% static "media/heartrate.png" %}" alt="">
+
+                    <p id="seven_middle_para"><b>115</b>bmi</p>
+                    <p id="seven_lower_para">Normal range 60-100</p>
+                </div>
+                <div class="grid-item grid-container">
+                    <p id="seven_upper_para" class="grid-item">BMI</p>
+                    <img class="grid-item" src="{% static "media/stopwatch.png" %}" alt="">
+
+                    <p id="seven_middle_para"><b>30.5</b>kg/m</p>
+                    <p id="seven_lower_para">Normal range 20-25</p>
+                </div>
+                <div class="grid-item grid-container">
+                    <p id="seven_upper_para" class="grid-item">Water</p>
+                    <img style="margin-left: -56px;" class="grid-item" src="{% static "media/drop.png" %}" alt="">
+
+                    <p style="width: 182px; margin-left: -9px; margin-top: 44px;" id="seven_middle_para"><b>0.8 of 4.2</b>liters</p>
+                    <div id="seven_lower_div" > <div></div></div>
+                </div>
+            </div>
+
+        </div>
+    </div>  
+
+    
+</body>
+</html>
+
+
+{% comment %} 
+what?
+data leakage -> unauthourized transfer of data.
+
+types of data leakage?
+this tranfer can be PHYSICAL and ELECTRONIC
+
+Data leakage is a huge problem of data security
+
+affects?
+leads to major financial losses and brand reputation and loss of customer trust
+
+Who are responsible?
+untrained and unaware employees are the bigest threat and also so many of them are working outside which is 
+increasing the threat
+
+how we can solve this problem?
+classify your data acc to it value and senstivity
+gain knowledge on security awareness
+regularly back-up your data
+perform 3rd party risk assessments
+encrypt all senstivity data
+monitor vendor security posture {% endcomment %}
+
+
+
