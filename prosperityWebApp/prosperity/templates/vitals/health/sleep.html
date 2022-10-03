@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %} <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
-    {% load static %} <link rel="stylesheet" href="{% static 'health.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'sleep.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
@@ -34,8 +34,8 @@
     
     <div id="bioage_lower" class="grid-container">
         <div id="leftcol" class="grid-item grid-container leftbar_bioage">
-            <a style="background:#ffff" class="grid-item" href="/bioage">      <img src="{% static "media/arm.png" %}" alt=""> Bio Age</a>
-            <a href="/sleep" class="grid-item">    <img style="margin-right: 3px;" src="{% static "media/sleeping.png" %}" alt=""> Sleep</a>
+            <a class="grid-item" href="/bioage">      <img src="{% static "media/arm.png" %}" alt=""> Bio Age</a>
+            <a style="background:#ffff" href="/sleep" class="grid-item">    <img style="margin-right: 3px;" src="{% static "media/sleeping.png" %}" alt=""> Sleep</a>
             <a href="/profileCoverage" class="grid-item" >    <img style="margin-right: -2px; margin-left: -4px;" src="{% static "media/heartrate.png" %}" alt=""> Heart Rate</a>
             <a href="/profileNotification" class="grid-item"> <img style="margin-right: 4px;" src="{% static "media/drop.png" %}" alt=""> Water</a>
             <a href="/profilePayments" class="grid-item" >    <img style="margin-right: 4px;" src="{% static "media/running.png" %}" alt=""> Steps</a>
@@ -47,32 +47,36 @@
           
         <div id="rightcol_bioage" class="grid-item grid-container">
             <div id="one" class="grid-item grid-container">
-                   <h1 class="grid-item">Bio Age</h1>
+                   <h1 class="grid-item">Sleep</h1>
                    <a style="width: 2vw;"  class="grid-item" href=""><i id="one_icon1" class="bi-arrow-repeat"></i></a>
                    <i id="one_icon2" class="bi-three-dots-vertical grid-item"></i>
             </div>
+
             <div id="two" class="grid-item grid-container">
                 <div style="width: 8vw;" class="grid-item">
-                    <p id="two_para1"><b id="age" >32</b> Year Ols</p>
-                    <p id="two_para2">Actual Age: <b id="lower_age">38</b> Years Old </p>
+                    <p id="two_para1"><b id="age" >6</b> hours<b id="age" >26</b> minutes</p>
+                    <p id="two_para2">Range: 8 hours</p>
                 </div>
-                <div style="width: 11vw;" class="grid-item">
+                <div style="width: 11vw; margin-left: 10px;" class="grid-item">
                     <i id="two_icon" class="bi-shield-check"></i>
-                    <p id="two_para3">You are doing Great</p>
+                    <p id="two_para3">You are
+                        at Low risk </p>
                 </div>
             </div>
+
             <div id="three" class="grid-item">
                 <h3>Highlights</h3>
             </div>
+            
             <div id="four" class="grid-item">
-                <p id="four_para1" >Sugar Level</p>
+                <p id="four_para1" >Sleep cycle</p>
                 <div id="four_div1" class="grid-container">
-                    <p id="four_para2" class="grid-item">Hey, your sugar level is rising that affects you bio age and can cause diabilties sugar related problems</p>
+                    <p id="four_para2" class="grid-item">Your Sleep cycle is trending low from last few day normalise yor sleep schedule by keeping sleep alarm</p>
                     <img id="four_img" class="grid-item" src="{% static "media/emoji.png" %}" alt="">
                 </div>
                 <hr>
                 <p id="four_para3">Daily Target </p>
-                <p id="four_para4"><b >1,732</b>/6000 Steps</p>
+                <p id="four_para4"><b >6</b> hours <b>26</b> minutes</p>
                 <div id="four_div2" > <div></div></div>
             </div>
 
@@ -80,25 +84,53 @@
                 <div class="grid-item"></div>
                 <div id="five_lower" class="grid-item grid-container">
                     <div id="five_lower_col1" class="grid-item">
-                        <p>38</p>
-                        <p>30</p>
+                        <p>8 hrs</p>
+                        <p>6 hrs</p>
                     </div>
                     <div id="five_lower_col2" class="grid-item">
-                        <input  type="range" orient="vertical" />
-                        <p>1W</p>
+                        {% comment %} <div id="range1" style=""></div> {% endcomment %}
+                        <div id="range2" style=""></div>
+                        <div id="range3" style="" ></div>
+                        <p>M</p>
                     </div>
                     <div id="five_lower_col2" class="grid-item">
-                        <input  type="range" orient="vertical" />
-                        <p>2W</p>
+                        {% comment %} <div id="range1" style=""></div> {% endcomment %}
+                        <div id="range2" style=""></div>
+                        <div id="range3" style="" ></div>
+                        <p>T</p>
                     </div>
                     <div id="five_lower_col2" class="grid-item">
-                        <input  type="range" orient="vertical" />
-                        <p>3W</p>
+                        {% comment %} <div id="range1" style=""></div> {% endcomment %}
+                        <div id="range2" style=""></div>
+                        <div id="range3" style="" ></div>
+                        <p>W</p>
                     </div>
                     <div id="five_lower_col2" class="grid-item">
-                        <input  type="range" orient="vertical" />
-                        <p>4W</p>
+                        {% comment %} <div id="range1" style=""></div> {% endcomment %}
+                        <div id="range2" style=""></div>
+                        <div id="range3" style="" ></div>
+                        <p>T</p>
                     </div>
+                    <div id="five_lower_col2" class="grid-item">
+                        {% comment %} <div id="range1" style=""></div> {% endcomment %}
+                        <div id="range2" style=""></div>
+                        <div id="range3" style="" ></div>
+                        <p>F</p>
+                    </div>
+                    <div id="five_lower_col2" class="grid-item">
+                        <div id="range2" style=""></div>
+                        <div id="range3" style="" ></div>
+                        <p>S</p>
+                        <div id="range1" style=""></div>
+                        
+                    </div>
+                    <div id="five_lower_col2" class="grid-item">
+                        {% comment %} <div id="range1" style=""></div> {% endcomment %}
+                        <div id="range2" style=""></div>
+                        <div id="range3" style="" ></div>
+                        <p>S</p>
+                    </div>
+                    
                 </div>
             </div>
             
@@ -107,11 +139,11 @@
                     <div style="background: #ffff;margin-left: 59px;" class="grid-item">
                         <p>Day</p>
                     </div>
-                    <div style="background: #ffff; margin-left: -3px;" class="grid-item">
-                        <p>Week</p>
+                    <div style="margin-left: -3px;" class="grid-item">
+                        <p style="color: #ffff; margin-left: -4px;">Week</p>
                     </div>
-                    <div class="grid-item">
-                        <p style="color: #ffff; margin-left: -4px;">Month</p>
+                    <div style="background: #ffff;" class="grid-item">
+                        <p>Month</p>
                     </div>
                 </div>
                 <div>
@@ -149,5 +181,6 @@
     
 </body>
 </html>
+
 
 

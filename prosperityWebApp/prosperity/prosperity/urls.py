@@ -21,7 +21,7 @@ urlpatterns = [
     path("profilePaymentsAddBanks",include('home.urls')),
     path("profileFeedback",include('home.urls')),
     path("profileAbout",include('home.urls')),
-    path("bioage",include('home.urls')),
+    path("sleep",include('home.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

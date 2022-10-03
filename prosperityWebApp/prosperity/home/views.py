@@ -39,5 +39,8 @@ def profileAbout(request):
 def bioage(request):
     return render(request, 'vitals/health/bioage.html')
 
+def sleep(request):
+    return render(request, 'vitals/health/sleep.html')
+
 # Create your views here.
 

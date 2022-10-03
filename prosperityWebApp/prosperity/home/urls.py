@@ -16,4 +16,5 @@ urlpatterns = [
     path("profileFeedback",views.profileFeedback, name = 'profileFeedback'),
     path("profileAbout",views.profileAbout, name = 'profileAbout'),
     path("bioage",views.bioage, name = 'bioage'),
+    path("sleep",views.sleep, name = 'sleep'),
 ]

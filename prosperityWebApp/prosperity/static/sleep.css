@@ -187,8 +187,8 @@
 }
 
 #two_para1 {
-  width: 105px;
-  height: 30px;
+  width: 13vw;
+  height: 3.5vh;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -199,8 +199,8 @@
 
 
 #two_para2 {
-  width: 123px;
-  height: 15px;
+  width: 13vw;
+  height: 2vh;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -212,7 +212,7 @@
 #two_icon {
   width: 60px;
   height: 30px;
-  color: #66DD64;
+  color: #F7C881;
   font-size: 20px;
   margin-left: 98px;
 }
@@ -226,15 +226,15 @@
   font-size: 9.936px;
   line-height: 15px;
   text-align: center;
-  color: #66DD64;
+  color: #F7C881;
   margin-left: 78px;
 }
 
 #three {
-    /* margin-top: 28px; */
-    height: 6vh;
-    position: absolute;
-    top: 14vh;
+  /* margin-top: 28px; */
+  height: 6vh;
+  position: absolute;
+  top: 14vh;
 }
 
 #three h3 {
@@ -354,7 +354,7 @@
 
 #four_div2 div {
 
-  width: 5vw;
+  width: 14vw;
   height: 2vh;
   background: linear-gradient(90deg, #A6A1FF 0%, rgba(192, 97, 220, 0.91) 100%);
   border-radius: 9.9356px 0px 0px 9.9356px;
@@ -374,9 +374,43 @@
 
 #five_lower {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
   /* height: 19vh; */
   width: 21vw;
+}
+
+#range1 {
+    /* border: 2px solid rgba(10, 10, 10, 10%); */
+    width: 1.5vh;
+    background: rgb(10,10,10,14%);
+    height: 12vh;
+    position: relative;
+    top: -6vh;
+    left: 0vw;
+    border-radius: 18px;
+    /* margin-top: 7px; */
+    margin-left: -6px;
+}
+
+#range2{
+  border: 1px solid #e0e0e0;
+  width: 0vw;
+  height: 9vh;
+  position: absolute;
+  top: 5vh;
+}
+
+#range3{
+  border: 2px solid #8381F7;
+  width: 0.5vh;
+  background: #8381F7;
+  height: 6vh;
+  position: relative;
+  top: 7vh;
+  left: 0vw;
+  border-radius: 18px;
+  /* margin-top: 7px; */
+  margin-left: -1px;
 }
 
 #five_lower_col1 p {
@@ -405,12 +439,12 @@
 }
 
 /* #five_lower_col2 input::-moz-range-thumb {
-  width: 8px;
-  height: 64px;
-  border: 0;
-  background: url('contrasticon.png');
-  cursor: pointer;
-} */
+    width: 8px;
+    height: 64px;
+    border: 0;
+    background: url('contrasticon.png');
+    cursor: pointer;
+  } */
 
 #five_lower_col2 p {
   width: 14px;
@@ -419,6 +453,8 @@
   font-style: normal;
   font-weight: 500;
   font-size: 9.9356px;
+  top: 8vh;
+  position: relative;
   line-height: 15px;
   color: #5B6CAC;
   padding-top: 15px;
