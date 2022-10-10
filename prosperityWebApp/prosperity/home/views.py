@@ -42,5 +42,11 @@ def bioage(request):
 def sleep(request):
     return render(request, 'vitals/health/sleep.html')
 
+def genderDob(request):
+    return render(request,'home/genderDob.html')
+
+def heightWeight(request):
+    return render(request,'home/heightWeight.html')
+
 # Create your views here.
 

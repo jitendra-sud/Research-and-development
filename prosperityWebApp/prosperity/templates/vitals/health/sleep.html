@@ -58,7 +58,7 @@
                     <p id="two_para2">Range: 8 hours</p>
                 </div>
                 <div style="width: 11vw; margin-left: 10px;" class="grid-item">
-                    <i id="two_icon" class="bi-shield-check"></i>
+                    <i id="two_icon" class="bi-exclamation-triangle"></i>
                     <p id="two_para3">You are
                         at Low risk </p>
                 </div>
@@ -147,35 +147,150 @@
                     </div>
                 </div>
                 <div>
-                    <p id="six_lower" >Factor affecting Heart rate</p>
+                    <p id="six_lower" >Add Info</p>
                 </div>
             </div>
 
-            <div id="seven" class="grid-item grid container">
-                <div class="grid-item grid-container">
-                    <p id="seven_upper_para" class="grid-item">Heart Rate </p>
-                    <img class="grid-item" src="{% static "media/heartrate.png" %}" alt="">
+            <div style="  position: absolute;
+            width: 18vw;
+            height: 15vh;
+            background: #FFFFFF;
+            box-shadow: 0px 4.96283px 19.8513px rgb(44 88 255 / 20%);
+            border-radius: 14.8885px;     top: 80vh;" id="seven" class="grid-item">
 
-                    <p id="seven_middle_para"><b>115</b>bmi</p>
-                    <p id="seven_lower_para">Normal range 60-100</p>
+                <p style="width: 10vw;
+                position: absolute;
+                height: 3vh;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                top: 1.5vh;
+                font-size: 92%;
+                line-height: 18px;
+                color: #5B6CAC;
+                left: 1vw;" >Sleep</p>
+                
+                <div style="display: grid;
+                grid-template-columns: auto auto;" id="seven_middle" class="grid-container">
+                    <p class="grid-item" style=" width: 10vw;   position: absolute;
+                top: 5vh;
+                left: 0.5vw;" id="two_para1"><b id="age" >6</b>  hours  <b id="age" >26 </b>  minutes</p>
+                    <img style="    position: absolute;
+                    left: 12.5vw;
+                    top: 2.5vh;
+                    width: 25%;" class="grid-item" src="{% static "media/sleepcycle.png" %}" alt="">
                 </div>
-                <div class="grid-item grid-container">
-                    <p id="seven_upper_para" class="grid-item">BMI</p>
-                    <img class="grid-item" src="{% static "media/stopwatch.png" %}" alt="">
-
-                    <p id="seven_middle_para"><b>30.5</b>kg/m</p>
-                    <p id="seven_lower_para">Normal range 20-25</p>
-                </div>
-                <div class="grid-item grid-container">
-                    <p id="seven_upper_para" class="grid-item">Water</p>
-                    <img style="margin-left: -56px;" class="grid-item" src="{% static "media/drop.png" %}" alt="">
-
-                    <p style="width: 182px; margin-left: -9px; margin-top: 44px;" id="seven_middle_para"><b>0.8 of 4.2</b>liters</p>
-                    <div id="seven_lower_div" > <div></div></div>
-                </div>
+    
+                <p style="    position: absolute;
+                width: 5vw;
+                height: 4vh;
+                left: 3vw;
+                top: 11vh;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 92%;
+                color: #8381F7;" >Record Time</p>
+            
             </div>
 
         </div>
+
+        <div class="grid-item" >
+            <p style="position: absolute;
+            width: 5vw;
+            height: 3vh;
+            left: 71vw;
+            top: 25vh;
+            
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 116%;
+            color: #5B6CAC;">Disease</p>
+
+            <div style="    box-sizing: border-box;
+            position: absolute;
+            width: 21vw;
+            height: 24vh;
+            left: 71vw;
+            top: 29vh;
+            background: #FFFFFF;
+            border: 2px solid #F7C881;
+            box-shadow: 0px 5px 20px rgb(44 88 255 / 20%);
+            border-radius: 10px;">
+
+                <div style="  display: grid;
+                grid-template-columns: auto auto;" class="grid-container">
+                    <p class="grid-item" style="position: absolute;
+                    width: 14vw;
+                    height: 6vh;
+                    left: 1vw;
+                    top: 2vh;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 94%;
+                    color: #5B6CAC;">You are at low risk for various disease</p>
+
+                    <div style="    width: 9vw;
+                                    top: 2vh;
+                                    left: 12vw;
+                                    position: absolute;" class="grid-item">
+                        <i id="two_icon" class="bi-exclamation-triangle"></i>
+                        <p id="two_para3">Low risk </p>
+                    </div>
+                </div>
+
+                <p style="    position: absolute;
+                width: 20vw;
+                height: 3vh;
+                left: 1vw;
+                top: 8vh;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 92%;
+                line-height: 18px;
+                color: #5B6CAC;">Less sleep causes various disease like:</p>
+                <ul style="position: absolute;
+                width: 20vw;
+                height: 3vh;
+                left: 1vw;
+                top: 11vh;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 92%;
+                line-height: 25px;
+                color: #5B6CAC;">
+                    <li>Depression</li>
+                    <li>Anxiety</li>
+                    <li>Skin Aging</li>
+                    <li>Memory Loss <a style="position: absolute;
+                        width: 12vw;
+                        height: 4vh;
+                        text-decoration: none;
+                        left: 13vw;
+                        top: 8.5vh;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 100%;
+                        line-height: 15px;
+                        color: #C4A06A;" href="">Learn More     <i style="position: absolute;
+                        width: 4vw;
+                        height: 3vh;
+                        left: 5vw;
+                        top: -0.2vh;
+                        font-size: 142%;
+                        color: orange;" class="bi-arrow-right"></i></a></li>
+            </ul>
+                
+            </div>
+        </div> 
+
+
     </div>  
 
     

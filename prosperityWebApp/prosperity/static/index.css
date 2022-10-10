@@ -1,7 +1,10 @@
 .one {
   color: #484848;
+  position: relative;
   font-family: Poppins;
-  font-size: 50px;
+  width: 75vw;
+  left: 1vw;
+  font-size: 328%;
   font-weight: 500;
   line-height: 56px;
   letter-spacing: 0em;
@@ -11,7 +14,8 @@
 .two {
   color: #BF0909;
   font-family: Poppins;
-  font-size: 37px;
+  position: relative;
+  font-size: 87%;
   font-weight: 600;
   line-height: 56px;
   letter-spacing: 0em;
@@ -19,21 +23,21 @@
 }
 
 .top-div {
+  position: relative;
   margin-left: 100px;
   margin-top: 90px;
-  width: 900px;
-
+  width: 75vw;
 }
 
 .right-div {
-  height: 550px;
-  width: 430px;
-  left: 790px;
-  top: 220px;
+  height: 64vh;
+  width: 22vw;
+  left: -2vw;
+  top: 6vh;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  margin-left: 10%;
-  margin-top: 40px;
+  position: relative;
+  background: #FFFFFF;
 }
 
 .rd1 {
@@ -96,12 +100,12 @@ color: #8381F7;
 }
 
 .r1 {
-  height: 750px;
-  width: 450px;
-  left: 0px;
-  top: 0px;
+  height: 76vh;
+  position: relative;
+  width: 21.5vw;
+  left: 20vw;
+  top: 3vh;
   border-radius: 0px;
-  margin-left: 30%;
 }
 
 #phone {
@@ -186,10 +190,10 @@ color: #8381F7;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 27%;
-  margin-top: 20px;
   color: #5B6CAC;
-
+  position: relative;
+  top: 5vh;
+  left: 8vw;
 }
 
 #ps1 {

@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Prosperity</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'genderDob.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  </head>
+  <body style="background:#F6F9FF" >
+    <div class="top-div">
+      <p class="one" >We Guide you for your Better <b class="two">Health</b></p>
+    </div>
+    
+      <div class="row">
+        <div class="col" >
+          {% load static %} <img id="img" class="r1" src="{% static "media/Component21.jpg" %}" alt="home" />
+          {% comment %} <img class="r1" src="https://m-cdn.phonearena.com/images/phones/73688-350/Apple-iPhone-XS-Max.jpg" alt=""> {% endcomment %}
+        </div>
+        <div class="col">
+            <div style="background: #FFFFFF;" class="right-div">
+              <div id="right_div_first" class="grid-container">
+                  <p id="right_div_first_para" class="grid-item">Tell Us,</p>
+                  <p id="right_div_first_para" style="top: 7vh; width: 11vw; left: 5.5vw;" >About Yourself</p>
+                  <a id="right_div_first_a" class="grid-item" href="" >skip</a>
+              </div>
+              <p id="right_div_second">This information lets us know you better for your growth </p>
+              <p id="right_div_third">What is your Gender ?</p>
+              <form action="">
+                <div class="grid-container">
+                    <select id="male_lable" class="form-select grid-item" multiple aria-label="multiple select example">
+                        <option id="male" value="1">Male</option>
+                    </select>
+                    <select id="female_lable" class="form-select grid-item" multiple aria-label="multiple select example">
+                        <option id="female" value="1">Female</option>
+                    </select>
+                </div>
+                <p id="right_div_fifth">when is your Birthday ?</p>
+                <div id="right_div_six">
+                    <i  class="bi-calendar4"> <input type="date" id="myDate" value="2014-02-09" required></i>
+                   
+                </div>
+              </form>
+              
+
+              <div id="right_div_seven">
+                    <a href="">Continue</a>
+              </div> 
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
