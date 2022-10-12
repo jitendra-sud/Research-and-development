@@ -27,11 +27,10 @@ templates = Jinja2Templates(directory="templates")
 class user(BaseModel):
     profile: str 
     name: str = Field(min_length=1, max_length=16)
-
-class about(BaseModel):
     height : Optional[float]
     weight : Optional[float]
 
+## profile picture and name ######################################################
 
 @app.get('/yourself')
 async def yourself(request: Request):    
@@ -48,9 +47,10 @@ async def yourself(request: Request, userName: str = Body(...), img: UploadFile 
     context = {'request': request, 'result': result}
     print(result['name'])
     # result = Profile.insert_one(result)
-    return templates.TemplateResponse("yourself.html",context)
+    return result
 
 
+## Height and weight ##############################################################
 
 @app.get('/heightWeight')
 async def heightWeight(request: Request):    
@@ -68,4 +68,22 @@ async def heightWeight(request: Request,height: float = Form(...), weight: float
     print(result['Weight'])
     context = {'request': request}       
     return result
-    
+
+
+## gender and Dob ##################################################################
+
+
+@app.get('/genderDob')
+async def genderDob(request: Request):    
+    context = {'request': request}          
+    return templates.TemplateResponse("genderDob.html",context)
+
+
+@app.post("/genderDob")
+async def genderDob(request: Request,gender: str = Form(...), dob: str = Form(...)):
+    result = ({
+        'Gender': gender,
+        'dob': dob
+    })
+    context = {'request': request}       
+    return result
