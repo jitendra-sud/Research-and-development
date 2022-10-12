@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Prosperity</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/genderDob.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>  
+  </head>
+
+  <body style="background:#F6F9FF" >
+    <div class="top-div">
+      <p class="one" >We Guide you for your Better <b id="text" class="two">Health</b></p>
+    </div>
+    
+      <div class="row">
+        <div class="col" >
+          <img id="img" class="r1" src="{{ url_for('static', path='/Component21.jpg') }}" alt="home" />
+
+        </div>
+        <div class="col">
+            <div style="background: #FFFFFF;" class="right-div">
+              <div id="right_div_first" class="grid-container">
+                  <p id="right_div_first_para" class="grid-item">Tell Us,</p>
+                  <p id="right_div_first_para" style="top: 7vh; width: 11vw; left: 5.5vw;" >About Yourself</p>
+                  <a id="right_div_first_a" class="grid-item" href="" >skip</a>
+              </div>
+              <p id="right_div_second">This information lets us know you better for your growth </p>
+              <p id="right_div_third">What is your Height ?</p>
+              
+              <form action="" method="POST"  enctype="multipart/form-data">
+                <div id="feet" >'</div>
+                <div id="inches">"</div>
+                <output for="height"  id="rangevalue1" name="rangevalue1">5.1</output>
+                <input name="height" id="range1" type="range" min="4" max="7" step="0.10" oninput="rangevalue1.value=value" />
+
+                <img id="weight_scale"  src="" alt="">
+                
+                <p id="right_div_fifth">when is your Weight ?</p>
+                <output for="weight" id="rangevalue2" name="rangevalue2">50</output>
+                <input name="weight" id="range2" type="range"  min="20" max="100" oninput="rangevalue1.value=value"  >
+                <button style="margin-left: 52px" type="submit" id="right_div_seven"><p class="para">Continue</p></button>
+              </form>
+              
+
+      
+            </div>
+        </div>
+      </div>
+
+      <script>
+        const rangeInputs = document.querySelectorAll('input[type="range"]')
+        function handleInputChange(e) {
+          let target = e.target
+          if (e.target.type !== 'range') {
+            target = document.getElementById('range')
+          } 
+          const min = target.min
+          const max = target.max
+          const val = target.value
+          
+          target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+        }
+        
+        rangeInputs.forEach(input => {
+          input.addEventListener('input', handleInputChange)
+        })
+
+        function change(i) {  
+          var doc = document.getElementById("text");  
+          var color =[ "black", "blue", "brown", "green"];  
+          for(i=0; i<color.length; i++){  
+               doc.style.color = color[i];  
+           }
+        }  
+       setInterval(function changebackground(){change(0)},1000);
+        
+   
+      </script>
+
+  </body>
+</html>
