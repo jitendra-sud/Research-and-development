@@ -1,0 +1,141 @@
+#payment_main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  height: 1451px;
+}
+
+#payment_main_click {
+  grid-template-rows: auto auto auto;
+  height: 1451px;
+}
+
+#notification_pay {
+  display: grid;
+  grid-template-rows: auto auto;
+  width: 500px;
+  margin-left: 155px;
+  margin-top: 178px;
+  max-height: 276px;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#notification_pay.open{
+ max-height: 500px;
+}
+
+#pay_box {
+  width: 368px;
+  height: 248.97px;
+  background: #FFFFFF;
+  box-shadow: 0px 4.05px 20.25px rgba(44, 88, 255, 0.15);
+  border-radius: 10.125px;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+#pay_box_click {
+  width: 368px;
+  background: #FFFFFF;
+  box-shadow: 0px 4.05px 20.25px rgba(44, 88, 255, 0.15);
+  border-radius: 10.125px;
+  display: grid;
+  max-height: 246px;
+  overflow: hidden;
+  transition: max-height 1s;
+  grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+#pay_box_click.open {
+  max-height: 450px;
+}
+
+#pay_box_click .grid-item.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#pay_box_click .grid-item.grid-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 3.93207px;
+  margin: 10px;
+}
+
+#pay_box_click .grid-item.grid-container a {
+  width: 296px;
+  height: 22px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.728px;
+  line-height: 24px;
+  color: #5B6CAC;
+  text-decoration: none;
+  margin-top: 14px;
+  margin-left: -11px;
+}
+
+
+
+hr {
+  width: 324px;
+  height: 0px;
+  left: 596px;
+  top: 537.05px;
+  opacity: 0.1;
+  border: 0.983017px solid #5B6CAC;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 22px;
+}
+
+#upi_input {
+  width: 328px;
+  height: 54px;
+  background: #FFFFFF;
+  border: 1px solid #5B6CAC;
+  box-shadow: 0px 4px 20px rgb(44 88 255 / 10%);
+  border-radius: 10px;
+  margin-left: 19px;
+  margin-top: 11px;
+  font-size: 20px;
+}
+
+#upi_info {
+  width: 336px;
+  height: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5B6CAC;
+  margin-left: 17px;
+  margin-top: 12px;
+
+}
+
+#upi_button {
+  width: 327px;
+  height: 50px;
+  background: #8381F7;
+  box-shadow: 0px 4px 20px rgb(44 88 255 / 20%);
+  border-radius: 10px;
+  border: 2px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  margin-left: 18px;
+  color: #ffff;
+  margin-bottom: 18px;
+}
+
+#click {
+  border: 0px;
+  background: #ffff;
+  width: 33px;
+  color: #5B6CAC;
+  margin-left: 0px;
+}

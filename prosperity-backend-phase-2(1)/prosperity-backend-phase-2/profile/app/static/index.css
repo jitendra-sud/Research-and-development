@@ -1,0 +1,264 @@
+.one {
+  color: #484848;
+  position: relative;
+  font-family: Poppins;
+  width: 75vw;
+  left: 1vw;
+  font-size: 328%;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.two {
+  color: #BF0909;
+  font-family: Poppins;
+  position: relative;
+  font-size: 87%;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.top-div {
+  position: relative;
+  margin-left: 100px;
+  margin-top: 90px;
+  width: 75vw;
+}
+
+.right-div {
+  height: 64vh;
+  width: 22vw;
+  left: -2vw;
+  top: 6vh;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  background: #FFFFFF;
+}
+
+.rd1 {
+  margin-top: 10%;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+  text-align: center;
+  color: #C5C9E8;
+
+}
+
+.rd2 {
+  font-family: Pacifico;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  color: #5B6CAC;
+
+}
+
+.rd3 {
+  height: 24px;
+  left: 830px;
+  top: 425px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5B6CAC;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+
+.rd4 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5B6CAC;
+  margin-left: 15%;
+  margin-top: 0%;
+}
+
+.rd5{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+text-transform: capitalize;
+color: #8381F7;
+
+}
+
+.r1 {
+  height: 76vh;
+  position: relative;
+  width: 21.5vw;
+  left: 20vw;
+  top: 3vh;
+  border-radius: 0px;
+}
+
+#phone {
+  margin-left: 15%;
+  box-sizing: border-box;
+  width: 70%;
+  height: 10%;
+  background: #FFFFFF;
+  border: 1px solid rgba(91, 108, 172, 0.1);
+  box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+  border-radius: 10px;
+}
+
+.login {
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  margin-top: 10%;
+  margin-bottom: 4%;
+  width: 320px;
+  height: 50px;
+  border-radius: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #c4c3f4;
+  border: #F6F9FF solid 2px;
+}
+
+.para {
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #F6F9FF;
+  margin-top: 10px;
+
+}
+
+.rd5 {
+  margin-left: 30%;
+  margin-top: 30%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #8381F7;
+
+}
+
+.tnc1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #5B6CAC;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+.tnc2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #5B6CAC;
+  margin: 0%;
+}
+
+.app-button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5B6CAC;
+  position: relative;
+  top: 5vh;
+  left: 8vw;
+}
+
+#ps1 {
+  width: 172px;
+  /* text-align: right; */
+}
+
+.playstore1 {
+  width: 171.28px;
+  height: 50px;
+  left: 809px;
+  top: 834px;
+
+}
+
+.playstore2 {
+  width: 171.28px;
+  height: 50px;
+  left: 809px;
+  top: 834px;
+}
+
+
+.inputs input {
+  width: 40px;
+  height: 40px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0
+}
+
+.card-2 {
+  background-color: #fff;
+  padding: 10px;
+  width: 350px;
+  height: 100px;
+  bottom: -50px;
+  left: 20px;
+  position: absolute;
+  border-radius: 5px
+}
+
+.card-2 .content {
+  margin-top: 50px
+}
+
+.card-2 .content a {
+  color: red
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid red
+}
+
+.validate {
+  border-radius: 20px;
+  height: 40px;
+  background-color: red;
+  border: 1px solid red;
+  width: 140px
+}
+
