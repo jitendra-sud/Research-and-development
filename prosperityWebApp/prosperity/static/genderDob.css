@@ -252,3 +252,13 @@ input[type="range"]::-webkit-slider-thumb {
     position: absolute;
     left: 1.2vw;
 }
+
+
+/* .one b {
+    animation: change 2s step-end both;
+}
+
+@keyframes change {
+    from { color: green }
+    to   { color: red }
+} */

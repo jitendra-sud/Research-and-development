@@ -1,0 +1,112 @@
+#sugar_five_second_one {
+    position: absolute;
+    left: 1vw;
+    top: 4vh;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 78%;
+    line-height: 15px;
+    color: #5B6CAC;
+}
+
+#bp_two {
+    position: absolute;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.8154px;
+    line-height: 18px;
+    color: #5B6CAC;
+
+    top: -1.5vh;
+}
+
+
+#bp_four_para2{
+    width: 15vw;
+height: 5vh;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 0;
+font-size: 13.923px;
+line-height: 18px;
+color: #94a0c9;
+}
+
+#bmi_four_protein{
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100%;
+    line-height: 15px;
+    color: #5B6CAC;
+    top: -5vh;
+    left: 8.2vw;
+}
+
+#bmi_four_protein_para{
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64%;
+    line-height: 12px;
+    color: #5B6CAC;
+    top: -1vh;
+    left: 4vw;
+    width: 12vw;
+}
+
+#bmi_four_div2{
+    width: 12vw;
+height: 1.5vh;
+left: 2.5vw;
+position: relative;
+top: 1vh;
+background: #E1DEFF;
+border-radius: 9.9356px;
+margin-left: 24px;
+margin-top: 21px;
+}
+
+
+#bmi_four_div2 div{
+    width: 7vw;
+height: 1.5vh;
+left: 0vw;
+background: linear-gradient(90deg, #A6A1FF 0%, rgba(192, 97, 220, 0.91) 100%);
+border-radius: 9.9356px 0px 0px 9.9356px;
+}
+
+#bmi_steps_four_0{
+    left: 3.5vw;
+top: 3vh;
+font-size: 72%;
+position: absolute;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+/* font-size: 7.87689px; */
+line-height: 12px;
+/* left: 1vw; */
+color: #5B6CAC;
+}
+
+#bmi_steps_four_target6000{
+    left: 15.5vw;
+top: 3vh;
+font-size: 72%;
+    position: absolute;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+/* font-size: 7.87689px; */
+line-height: 12px;
+/* left: 17vw; */
+color: #5B6CAC;
+}
+
+

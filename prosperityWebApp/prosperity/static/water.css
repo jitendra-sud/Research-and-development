@@ -1,0 +1,184 @@
+#water_four_para2 {
+    width: 14vw;
+    height: 5vh;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 0;
+    font-size: 11.9227px;
+    line-height: 18px;
+    color: #94a0c9;
+    margin-bottom: 0;
+}
+
+#water_four_img {
+    width: 2vw;
+    height: 4vh;
+    position: relative;
+    top: 5vh;
+    left: 0vw;
+}
+
+#water_five {
+    display: grid;
+    grid-template-rows: auto auto;
+    position: absolute;
+    width: 40vh;
+    height: 19vh;
+    left: 0vw;
+    top: 52vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4.90798px 19.6319px rgba(44, 88, 255, 0.2);
+    border-radius: 9.81597px;
+}
+
+#water_five_second{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+#water_five_second_one{
+    position: absolute;
+    left: 1.5vw;
+    top: 6vh;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 92%;
+    line-height: 15px;
+    color: #5B6CAC;
+}
+
+#water_seven .grid-item.grid-container{
+    display: grid;
+grid-template-columns: auto auto;
+width: 13vw;
+height: 15vh;
+background: #FFFFFF;
+box-shadow: 0px 4.96283px 19.8513px rgb(44 88 255 / 20%);
+border-radius: 14.8885px;
+position: relative;
+top: 82vh;
+left: -0.5vw;
+}
+
+#water_seven_middle_para {
+    width: 4vw;
+    height: 5vh;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 104%;
+    line-height: 12px;
+    color: #5B6CAC;
+    position: relative;
+    top: 5.5vh;
+    left: -5.5vw;
+  }
+
+  #water_seven_middle_para b{
+    position: relative;
+margin-left: 0.5vw;
+margin-right: 0.5vw;
+font-size: 169%;
+  } 
+
+#water_seven_2ndlastpara{
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100%;
+    line-height: 21px;
+    color: #5B6CAC;
+    top: 8vh;
+    left: 2vw;
+}
+
+#water_seven_lastpara{
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 67%;
+    line-height: 21px;
+    color: #5B6CAC;
+    top: 10vh;
+    left: 2.5vw;
+}
+
+#water_seven_lastimg{
+    position: relative;
+left: 7vw;
+top: -3vh;
+height: 9vh;
+}
+
+#water_eight_box {
+    box-sizing: border-box;
+    position: absolute;
+    width: 21vw;
+    height: 17vh;
+    left: 71vw;
+    top: 29vh;
+    background: #FFFFFF;
+    border: 2px solid #66DD64;
+    box-shadow: 0px 5px 20px rgba(44, 88, 255, 0.2);
+    border-radius: 10px;
+  }
+
+  #water_eight_1stbox_div {
+    width: 9vw;
+    top: 2vh;
+    left: 12vw;
+    position: absolute;
+  }
+
+  #water_two_icon {
+    width: 60px;
+    height: 30px;
+    color: #66DD64;
+    font-size: 20px;
+    margin-left: 98px;
+  }
+
+  #water_two_para3 {
+    width: 60px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.936px;
+    line-height: 15px;
+    text-align: center;
+    color: #66DD64;
+    margin-left: 78px;
+  }
+
+  #water_eight_learn_more{
+    position: absolute;
+width: 12vw;
+height: 4vh;
+text-decoration: none;
+left: 12vw;
+top: -2.5vh;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 100%;
+line-height: 15px;
+color: #66DD64;
+  }
+
+  #water_eight_2nd {
+    position: absolute;
+    width: 17vw;
+    height: 3vh;
+    left: 1vw;
+    top: 8vh;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 92%;
+    line-height: 18px;
+    color: #5B6CAC;
+  }

@@ -9,6 +9,12 @@ def otp(request):
 def yourself(request):
     return render(request, 'home/yourself.html')
 
+def genderDob(request):
+    return render(request,'home/genderDob.html')
+
+def heightWeight(request):
+    return render(request,'home/heightWeight.html')
+
 def profileDetails(request):
     return render(request, 'profiles/profileDetails.html')
 
@@ -42,11 +48,23 @@ def bioage(request):
 def sleep(request):
     return render(request, 'vitals/health/sleep.html')
 
-def genderDob(request):
-    return render(request,'home/genderDob.html')
+def heartRate(request):
+    return render(request, 'vitals/health/heartRate.html')
 
-def heightWeight(request):
-    return render(request,'home/heightWeight.html')
+def water(request):
+    return render(request, 'vitals/health/water.html')
+
+def steps(request):
+    return render(request, 'vitals/health/steps.html')
+
+def bloodSugar(request):
+    return render(request, 'vitals/health/bloodSugar.html')
+
+def bloodPressure(request):
+    return render(request, 'vitals/health/bloodPressure.html')
+
+def bmi(request):
+    return render(request, 'vitals/health/bmi.html')
 
 # Create your views here.
 

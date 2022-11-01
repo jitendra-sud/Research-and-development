@@ -14,6 +14,7 @@ urlpatterns = [
     path("otp/yourself",include('home.urls')),
     path("genderDob",include('home.urls')),
     path("heightWeight",include('home.urls')),
+
     path("profileDetails",include('home.urls')),
     path("profileDocuments",include('home.urls')),
     path("profileCoverage",include('home.urls')),
@@ -23,7 +24,15 @@ urlpatterns = [
     path("profilePaymentsAddBanks",include('home.urls')),
     path("profileFeedback",include('home.urls')),
     path("profileAbout",include('home.urls')),
-    path("sleep",include('home.urls')),   
+    
+    path("bioage",include('home.urls')), 
+    path("sleep",include('home.urls')), 
+    path("heartRate",include('home.urls')),   
+    path("water",include('home.urls')),   
+    path("steps",include('home.urls')),   
+    path("bloodSugar",include('home.urls')), 
+    path("bloodPressure",include('home.urls')),
+    path("bmi",include('home.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

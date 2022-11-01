@@ -36,12 +36,12 @@
         <div id="leftcol" class="grid-item grid-container leftbar_bioage">
             <a class="grid-item" href="/bioage">      <img src="{% static "media/arm.png" %}" alt=""> Bio Age</a>
             <a style="background:#ffff" href="/sleep" class="grid-item">    <img style="margin-right: 3px;" src="{% static "media/sleeping.png" %}" alt=""> Sleep</a>
-            <a href="/profileCoverage" class="grid-item" >    <img style="margin-right: -2px; margin-left: -4px;" src="{% static "media/heartrate.png" %}" alt=""> Heart Rate</a>
-            <a href="/profileNotification" class="grid-item"> <img style="margin-right: 4px;" src="{% static "media/drop.png" %}" alt=""> Water</a>
-            <a href="/profilePayments" class="grid-item" >    <img style="margin-right: 4px;" src="{% static "media/running.png" %}" alt=""> Steps</a>
-            <a href="/profileFeedback" class="grid-item" >    <img style="margin-right: -8px; margin-left: -4px;" src="{% static "media/drop2.png" %}" alt=""> Blood Sugar</a>
-            <a href="/profileAbout" class="grid-item" >       <img style="margin-right: 18px; margin-left: 5px;" src="{% static "media/drop3.png" %}" alt=""> Blood Pressure</a>
-            <a href="/profileFeedback" class="grid-item" >    <img src="{% static "media/stopwatch.png" %}" alt=""> BMI</a>
+            <a href="/heartRate" class="grid-item" >    <img style="margin-right: -2px; margin-left: -4px;" src="{% static "media/heartrate.png" %}" alt=""> Heart Rate</a>
+            <a href="/water" class="grid-item"> <img style="margin-right: 4px;" src="{% static "media/drop.png" %}" alt=""> Water</a>
+            <a href="/steps" class="grid-item" >    <img style="margin-right: 4px;" src="{% static "media/running.png" %}" alt=""> Steps</a>
+            <a href="/bloodSugar" class="grid-item" >    <img style="margin-right: -8px; margin-left: -4px;" src="{% static "media/drop2.png" %}" alt=""> Blood Sugar</a>
+            <a href="/bloodPressure" class="grid-item" >       <img style="margin-right: 18px; margin-left: 5px;" src="{% static "media/drop3.png" %}" alt=""> Blood Pressure</a>
+            <a href="/bmi" class="grid-item" >    <img src="{% static "media/stopwatch.png" %}" alt=""> BMI</a>
             <a href="/profileAbout" class="grid-item" >       <img style="margin-left: 3px;" src="{% static "media/flame.png" %}" alt=""> Calories</a>       
         </div>
           
@@ -74,7 +74,7 @@
                     <p id="four_para2" class="grid-item">Your Sleep cycle is trending low from last few day normalise yor sleep schedule by keeping sleep alarm</p>
                     <img id="four_img" class="grid-item" src="{% static "media/emoji.png" %}" alt="">
                 </div>
-                <hr>
+                <hr id="sleep_hr">
                 <p id="four_para3">Daily Target </p>
                 <p id="four_para4"><b >6</b> hours <b>26</b> minutes</p>
                 <div id="four_div2" > <div></div></div>
