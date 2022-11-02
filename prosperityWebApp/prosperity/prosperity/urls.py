@@ -33,6 +33,9 @@ urlpatterns = [
     path("bloodSugar",include('home.urls')), 
     path("bloodPressure",include('home.urls')),
     path("bmi",include('home.urls')),
+
+    path("netWorth",include('home.urls')),
+    path("income",include('home.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

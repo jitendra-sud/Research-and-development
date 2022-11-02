@@ -66,5 +66,11 @@ def bloodPressure(request):
 def bmi(request):
     return render(request, 'vitals/health/bmi.html')
 
+def netWorth(request):
+    return render(request, 'vitals/wealth/netWorth.html')
+
+def income(request):
+    return render(request, 'vitals/wealth/income.html')
+
 # Create your views here.
 

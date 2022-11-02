@@ -27,4 +27,7 @@ urlpatterns = [
     path("bloodSugar",views.bloodSugar, name = 'bloodSugar'),
     path("bloodPressure",views.bloodPressure, name = 'bloodPressure'),
     path("bmi",views.bmi, name = 'bmi'),
+
+    path("netWorth",views.netWorth, name = 'netWorth'),
+    path("income",views.income, name = 'income'),
 ]
