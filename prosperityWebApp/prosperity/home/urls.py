@@ -30,4 +30,11 @@ urlpatterns = [
 
     path("netWorth",views.netWorth, name = 'netWorth'),
     path("income",views.income, name = 'income'),
+    path("investment",views.investment, name = 'investment'),
+    path("assets",views.assets, name = 'assets'),
+    path("expense",views.expense, name = 'expense'),
+    path("liabilities",views.liabilities, name = 'liabilities'),
+    path("insurance",views.insurance, name = 'insurance'),
+    path("savings",views.savings, name = 'savings'),
+    
 ]

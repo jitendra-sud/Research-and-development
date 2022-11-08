@@ -36,6 +36,13 @@ urlpatterns = [
 
     path("netWorth",include('home.urls')),
     path("income",include('home.urls')),
+    path("investment",include('home.urls')),
+    path("assets",include('home.urls')),
+    path("expense",include('home.urls')),
+    path("liabilities",include('home.urls')),
+    path("insurance",include('home.urls')),
+    path("savings",include('home.urls')),
+    
 ]
 
 urlpatterns += staticfiles_urlpatterns()

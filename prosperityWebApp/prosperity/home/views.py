@@ -15,6 +15,9 @@ def genderDob(request):
 def heightWeight(request):
     return render(request,'home/heightWeight.html')
 
+
+
+
 def profileDetails(request):
     return render(request, 'profiles/profileDetails.html')
 
@@ -42,6 +45,9 @@ def profileFeedback(request):
 def profileAbout(request):
     return render(request, 'profiles/profileAbout.html')
 
+
+
+
 def bioage(request):
     return render(request, 'vitals/health/bioage.html')
 
@@ -66,11 +72,33 @@ def bloodPressure(request):
 def bmi(request):
     return render(request, 'vitals/health/bmi.html')
 
+
+
+
 def netWorth(request):
     return render(request, 'vitals/wealth/netWorth.html')
 
 def income(request):
     return render(request, 'vitals/wealth/income.html')
 
+def investment(request):
+    return render(request, 'vitals/wealth/investment.html')
+
+def assets(request):
+    return render(request, 'vitals/wealth/assets.html')
+
+def expense(request):
+    return render(request, 'vitals/wealth/expense.html')
+
+def liabilities(request):
+    return render(request, 'vitals/wealth/liabilities.html')
+
+def insurance(request):
+    return render(request, 'vitals/wealth/insurance.html')
+
+def savings(request):
+    return render(request, 'vitals/wealth/savings.html')
 # Create your views here.
+
+
 
