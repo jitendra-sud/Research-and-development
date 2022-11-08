@@ -36,5 +36,9 @@ urlpatterns = [
     path("liabilities",views.liabilities, name = 'liabilities'),
     path("insurance",views.insurance, name = 'insurance'),
     path("savings",views.savings, name = 'savings'),
+
+    path("one",views.one, name = 'one'),
+    path("two",views.two, name = 'two'),
+
     
 ]

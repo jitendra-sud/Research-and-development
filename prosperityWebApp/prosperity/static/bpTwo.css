@@ -1,0 +1,99 @@
+#two_left {
+    position: absolute;
+    width: 25vw;
+    height: 64vh;
+    left: 6vw;
+    top: 20vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+}
+
+#two_left_1 {
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+    top: 3vh;
+    left: 1vw;
+}
+
+#two_left_1edit {
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #8381F7;
+    left: 22vw;
+    top: 3vh;
+}
+
+#two_left_img {
+    position: absolute;
+    top: 5vh;
+    left: 15vw;
+    height: 16vh;
+}
+
+#two_left_2 {
+    position: absolute;
+    top: 7vh;
+    left: 2vh;
+    width: 12vw;
+}
+
+#two_left_2 i {
+    color: #5B6CAC;
+    font-weight: 900;
+}
+
+#two_left_2para {
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+    top: 0vh;
+    left: 3vh;
+}
+
+#two_left_3 {
+    position: absolute;
+    top: 11vh;
+    left: 2vh;
+    width: 12vw;
+}
+
+#two_left_4 {
+    position: absolute;
+    top: 15vh;
+    left: 2vh;
+    width: 12vw;
+}
+
+#two_left_4 i {
+    color: #5B6CAC;
+    font-size: 20px;
+    position: relative;
+    left: -2px;
+    top: -4px;
+}
+
+#two_left_hr{
+    position: absolute;
+    width: 25vw;
+    height: 0px;
+    top: 20vh;
+    opacity: 0.1;
+    border: 1px solid #5B6CAC;
+}

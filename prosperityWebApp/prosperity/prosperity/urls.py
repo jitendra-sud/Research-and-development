@@ -43,6 +43,9 @@ urlpatterns = [
     path("insurance",include('home.urls')),
     path("savings",include('home.urls')),
     
+    path("one",include('home.urls')),
+    path("two",include('home.urls')),
+    
 ]
 
 urlpatterns += staticfiles_urlpatterns()

@@ -98,6 +98,15 @@ def insurance(request):
 
 def savings(request):
     return render(request, 'vitals/wealth/savings.html')
+
+
+
+def one(request):
+    return render(request, 'buyPolicy/one.html')
+
+def two(request):
+    return render(request, 'buyPolicy/two.html')
+
 # Create your views here.
 
 

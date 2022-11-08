@@ -1,0 +1,59 @@
+#one_one{
+    width: 29vw;
+    position: absolute;
+    text-align: center;
+    left: 4vw;
+    top: 4vh;
+}
+
+#one_para_one{
+    position: absolute;
+    width: 16vw;
+    height: 30px;
+    left: 37vw;
+    top: 150px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 24px;
+    line-height: 14px;
+    color: #5B6CAC;
+}
+
+#one_para_two{
+    position: absolute;
+    width: 27vw;
+    height: 5vh;
+    left: 589px;
+    top: 180px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 37px;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+}
+
+#one_last_next{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 320px;
+    height: 50px;
+    background: #8381F7;
+    border-radius: 10px;
+    flex: none;
+    flex-grow: 0;
+    font-family: 'Poppins';
+    order: 0;
+    flex-grow: 0;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 75vh;
+    left: 41vw;
+}
