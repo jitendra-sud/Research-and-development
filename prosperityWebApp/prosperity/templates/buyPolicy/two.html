@@ -11,7 +11,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <style>
-        html, body { height: 100%; width: 100%; margin: 0; }
+        html, body { height: 100%; width: 100%; margin: 0;}
+        .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+        .popup .popuptext {
+            visibility: hidden;
+            z-index: 1;
+            
+          }
+
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+          
+          .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+          }
+          
+          @-webkit-keyframes fadeIn {
+            from {opacity: 0;} 
+            to {opacity: 1;}
+          }
+          
+          @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+          }
     </style>
 </head>
 <body>
@@ -37,6 +78,26 @@
         </div>
         
         <hr id="two_left_hr" >
+
+        <p id="two_left_5">Investment Frequency</p>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Annually
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+
+        <p id="two_left_6">Save 1.5% on your premium by choosing annually</p>
+
+        <p id="two_left_7">Investment</p>
+        <input type="range" class="form-range" id="customRange1">
+
+        <p id="two_left_8">Select Policy Term (Years)</p>
+        <input type="range" class="form-range" id="customRange2">
     </div>
 
     <div id="two_right">
@@ -44,7 +105,158 @@
 
         <div id="two_right_div1">
             <p id="two_right_div1_1" >Pay 12 Years Only</p>
-            <p id="two_right_div1_1_benefits">Benefits</p>
+            <div id="two_right_div1_1_benefits" class="popup" onclick="myFunction()">Benefits
+                <span style="width: 74vw; height:155vh;" class="popuptext" id="two_down">
+                    <div id="two_down_top">
+                        <p id="two_down_top_para">12 Years Plan Benefits</p>
+                        <i class="bi-x-lg"></i>
+                    </div>
+            
+                    <div id="two_down_div1">
+                        <div id="two_down_div1_1">
+                            <img src="{% static "media/incomeBenefits.png" %}" alt="">
+                            <p>Income Benefit</p>
+                        </div>
+            
+                        <p id="two_down_div1_2">The Guaranteed Income is  percentage of Guaranteed Maturity Benefit depending on your Age when policy is issued , income will be paid during the pay-out period
+                            till the end of policy term provided the policy is in-force. </p>
+            
+                        <div id="two_down_div1_3">
+                            <p id="two_down_div1_3_upper">For 7 Pay, 30 Year Policy Term </p>
+                            <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
+                                <i class="bi-check"></i> 
+                                <p style="width: 27vw;">Pay for 7 years & get an annual income from <b>10th</b> year till policy term</p>
+                            </div>
+                        </div>
+            
+                        <div id="two_down_div1_4">
+                            <p id="two_down_div1_3_upper">For 12 Pay, 45 Year Policy Term </p>
+                            <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
+                                <i class="bi-check"></i> 
+                                <p style="width: 27vw;">Pay for 12 years & get an annual income from <b>15th</b>  year till policy term</p>
+                            </div>
+                        </div>
+            
+                        <div id="two_down_div1_5">
+                            <p>EX- You have purchased 12 pay plan for 45 years with a annual premium of 1 Lakhs you will get an annual income of
+                                <b>₹ 1,04,750/-</b> <br>
+                                From 15th years till the policy term (45 years) 
+                            </p>
+            
+                            <a href="">Learn More <i class="bi-arrow-right"></i></a>
+                        </div>
+            
+                    </div>
+            
+                    <div id="two_down_div2">
+                        <div id="two_down_div1_1">
+                            <img style="width: 2.5vw;" src="{% static "media/wallet.png" %}" alt="">
+                            <p style="width: 146px; top: 5vh;">Maturity Benefit</p>
+                        </div>
+            
+                        <p id="two_down_div1_2">On survival of the Life Assured till the end of the Policy Term, provided the policy is in-force, Guaranteed Maturity Benefit will be payable.  </p>
+            
+                        <div id="two_down_div1_3" style="top: 12vh;">
+                            <p id="two_down_div1_3_upper">For 7 Pay</p>
+                            <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
+                                <i class="bi-check"></i> 
+                                <p style="width: 27vw;">Get <b>8x</b> of annual premium as maturity benefit</p>
+                            </div>
+                        </div>
+            
+                        <div id="two_down_div1_4" style="top: 19vh;"> 
+                            <p id="two_down_div1_3_upper">For 12 Pay </p>
+                            <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
+                                <i class="bi-check"></i> 
+                                <p style="width: 27vw;">Get <b>15x</b> of annual premium as maturity benefit</p>
+                            </div>
+                        </div>
+            
+                        <div id="two_down_div1_5" style="top: 26vh;">
+                            <p>Ex- You have purchased 12 pay plan for 45 years with a annual premium of 1 Lakhs you will get 15 lakhs <b>₹ 16.12 Lakhs</b>
+                            </p>
+                            <p style="top: 7vh; left: 9vh; font-size: 13px;" >Get extra 1.12 lakhs benefit from online purchase</p>
+                            <a href="" style="top: 15vh;">Learn More <i class="bi-arrow-right"></i></a>
+                        </div>
+            
+                    </div>
+            
+                    <div id="two_down_div3">
+                        <div style="top: 2vh;" id="two_down_div1_1">
+                            <img src="{% static "media/deathBf.png" %}" alt="">
+                            <p style="top: 4vh;">Death Benefit</p>
+                        </div>
+            
+                        <p id="two_down_div1_2">In case of death of the life assured, during the policy term, Sum Assured on Death will be paid in lumpsum immediately
+                            to the nominee. Your policy will be terminated and no further benefits will be paid. </p>
+            
+                        <div id="two_down_div1_3">
+                            <p id="two_down_div1_3_upper">For 7 Pay</p>
+                            <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
+                                <i class="bi-check"></i> 
+                                <p style="width: 27vw;">Get <b>10x</b> of annual premium as Dealth benefit</p>
+                            </div>
+                        </div>
+            
+                        <div id="two_down_div1_4">
+                            <p id="two_down_div1_3_upper">For 12 Pay </p>
+                            <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
+                                <i class="bi-check"></i> 
+                                <p style="width: 27vw;">Get <b>10x</b> of annual premium as dealth benefit in Premium <br> payement term <br>
+                                    Get <b>15x</b> of annual premium as dealth benefit in Pay-out term</p>
+                            </div>
+                        </div>
+            
+                        <div id="two_down_div1_5">
+            
+                            <a href="">Learn More <i class="bi-arrow-right"></i></a>
+                        </div>
+            
+                    </div>
+            
+                    <div id="two_down_div4">
+                        <div style="top: 2vh;" id="two_down_div1_1">
+                            <img src="{% static "media/taxBf.png" %}" alt="">
+                            <p style="top: 4vh;">Tax Benefit</p>
+                        </div>
+            
+                        <div style="top: 5vh;"  id="two_down_div1_3">
+                            <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
+                                <i class="bi-check"></i> 
+                                <p style="width: 27vw;">Under Section 80C, premium paid for any life insurance policy taken qualifies for tax deduction. Tax exemption under 80C  is upto a maximum amount of Rs. 1,50,000.</p>
+                            </div>
+                        </div>
+            
+                       
+            
+                        <div id="two_down_div1_5">
+                            <a href="">Learn More <i class="bi-arrow-right"></i></a>
+                        </div>
+            
+                    </div>
+                    
+                    <div  style="height:32vh;" id="two_down_div5">
+                        <div style="top: 2vh;" id="two_down_div1_1">
+                            <img src="{% static "media/loanBf.png" %}" alt="">
+                            <p style="top: 4vh;">Loan Benefit</p>
+                        </div>
+            
+                      
+                        <div style="top: 5vh;" id="two_down_div1_3">
+                            <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
+                                <i class="bi-check"></i> 
+                                <p style="width: 27vw;">Loans can be availed on SUD life Century royale these policies also have a savings plan and life cover which makes it acceptable to banks. In order to avail a loan on an insurance policy, The amount sanctioned for the loans is usually 85% to 90% of the policies Surrender Value.</p>
+                            </div>
+                        </div>
+            
+            
+                        <div style="top: 17vh;" id="two_down_div1_5">
+                            <a href="">Learn More <i class="bi-arrow-right"></i></a>
+                        </div>
+            
+                    </div>
+                </span>
+            </div>
             <div id="two_right_div1_2">
                 <div id="two_right_div1_2_inner1">
                     <i class="bi-check"></i> 
@@ -95,191 +307,16 @@
         </div>
     </div>
 
-    <div id="two_down">
-        <div id="two_down_top">
-            <p id="two_down_top_para">12 Years Plan Benefits</p>
-            <i class="bi-x-lg"></i>
-        </div>
+    
 
-        <div id="two_down_div1">
-            <div id="two_down_div1_1">
-                <img src="{% static "media/incomeBenefits.png" %}" alt="">
-                <p>Income Benefit</p>
-            </div>
 
-            <p id="two_down_div1_2">The Guaranteed Income is  percentage of Guaranteed Maturity Benefit depending on your Age when policy is issued , income will be paid during the pay-out period
-                till the end of policy term provided the policy is in-force. </p>
-
-            <div id="two_down_div1_3">
-                <p id="two_down_div1_3_upper">For 7 Pay, 30 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 7 years & get an annual income from <b>10th</b> year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_4">
-                <p id="two_down_div1_3_upper">For 12 Pay, 45 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 12 years & get an annual income from <b>15th</b>  year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_5">
-                <p>EX- You have purchased 12 pay plan for 45 years with a annual premium of 1 Lakhs you will get an annual income of
-                    <b>₹ 1,04,750/-</b> <br>
-                    From 15th years till the policy term (45 years) 
-                </p>
-
-                <a href="">Learn More <i class="bi-arrow-right"></i></a>
-            </div>
-
-        </div>
-
-        <div id="two_down_div2">
-            <div id="two_down_div1_1">
-                <img src="{% static "media/incomeBenefits.png" %}" alt="">
-                <p>Income Benefit</p>
-            </div>
-
-            <p id="two_down_div1_2">The Guaranteed Income is  percentage of Guaranteed Maturity Benefit depending on your Age when policy is issued , income will be paid during the pay-out period
-                till the end of policy term provided the policy is in-force. </p>
-
-            <div id="two_down_div1_3">
-                <p id="two_down_div1_3_upper">For 7 Pay, 30 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 7 years & get an annual income from <b>10th</b> year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_4">
-                <p id="two_down_div1_3_upper">For 12 Pay, 45 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 12 years & get an annual income from <b>15th</b>  year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_5">
-                <p>EX- You have purchased 12 pay plan for 45 years with a annual premium of 1 Lakhs you will get an annual income of
-                    <b>₹ 1,04,750/-</b> <br>
-                    From 15th years till the policy term (45 years) 
-                </p>
-
-                <a href="">Learn More <i class="bi-arrow-right"></i></a>
-            </div>
-
-        </div>
-
-        <div id="two_down_div3">
-            <div id="two_down_div1_1">
-                <img src="{% static "media/incomeBenefits.png" %}" alt="">
-                <p>Income Benefit</p>
-            </div>
-
-            <p id="two_down_div1_2">The Guaranteed Income is  percentage of Guaranteed Maturity Benefit depending on your Age when policy is issued , income will be paid during the pay-out period
-                till the end of policy term provided the policy is in-force. </p>
-
-            <div id="two_down_div1_3">
-                <p id="two_down_div1_3_upper">For 7 Pay, 30 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 7 years & get an annual income from <b>10th</b> year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_4">
-                <p id="two_down_div1_3_upper">For 12 Pay, 45 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 12 years & get an annual income from <b>15th</b>  year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_5">
-                <p>EX- You have purchased 12 pay plan for 45 years with a annual premium of 1 Lakhs you will get an annual income of
-                    <b>₹ 1,04,750/-</b> <br>
-                    From 15th years till the policy term (45 years) 
-                </p>
-
-                <a href="">Learn More <i class="bi-arrow-right"></i></a>
-            </div>
-
-        </div>
-
-        <div id="two_down_div4">
-            <div id="two_down_div1_1">
-                <img src="{% static "media/incomeBenefits.png" %}" alt="">
-                <p>Income Benefit</p>
-            </div>
-
-            <p id="two_down_div1_2">The Guaranteed Income is  percentage of Guaranteed Maturity Benefit depending on your Age when policy is issued , income will be paid during the pay-out period
-                till the end of policy term provided the policy is in-force. </p>
-
-            <div id="two_down_div1_3">
-                <p id="two_down_div1_3_upper">For 7 Pay, 30 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 7 years & get an annual income from <b>10th</b> year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_4">
-                <p id="two_down_div1_3_upper">For 12 Pay, 45 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 12 years & get an annual income from <b>15th</b>  year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_5">
-                <p>EX- You have purchased 12 pay plan for 45 years with a annual premium of 1 Lakhs you will get an annual income of
-                    <b>₹ 1,04,750/-</b> <br>
-                    From 15th years till the policy term (45 years) 
-                </p>
-
-                <a href="">Learn More <i class="bi-arrow-right"></i></a>
-            </div>
-
-        </div>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("two_down");
+          popup.classList.toggle("show");
+        }
+    </script>
         
-        <div id="two_down_div5">
-            <div id="two_down_div1_1">
-                <img src="{% static "media/incomeBenefits.png" %}" alt="">
-                <p>Income Benefit</p>
-            </div>
-
-            <p id="two_down_div1_2">The Guaranteed Income is  percentage of Guaranteed Maturity Benefit depending on your Age when policy is issued , income will be paid during the pay-out period
-                till the end of policy term provided the policy is in-force. </p>
-
-            <div id="two_down_div1_3">
-                <p id="two_down_div1_3_upper">For 7 Pay, 30 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 7 years & get an annual income from <b>10th</b> year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_4">
-                <p id="two_down_div1_3_upper">For 12 Pay, 45 Year Policy Term </p>
-                <div style="top: 2.5vh; left: 0vw;" id="two_right_div1_2_inner1">
-                    <i class="bi-check"></i> 
-                    <p style="width: 27vw;">Pay for 12 years & get an annual income from <b>15th</b>  year till policy term</p>
-                </div>
-            </div>
-
-            <div id="two_down_div1_5">
-                <p>EX- You have purchased 12 pay plan for 45 years with a annual premium of 1 Lakhs you will get an annual income of
-                    <b>₹ 1,04,750/-</b> <br>
-                    From 15th years till the policy term (45 years) 
-                </p>
-
-                <a href="">Learn More <i class="bi-arrow-right"></i></a>
-            </div>
-
-        </div>
-    </div>
 </body>
 </html>

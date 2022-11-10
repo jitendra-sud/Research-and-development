@@ -45,6 +45,7 @@ urlpatterns = [
     
     path("one",include('home.urls')),
     path("two",include('home.urls')),
+    path("three",include('home.urls')), 
     
 ]
 

@@ -295,13 +295,15 @@
 
 #two_down{
     position: absolute;
-    width: 75vw;
-    height: 172vh;
-    left: 170px;
-    top: 99vh;
+    width: 154vh;
+    height: 155vh;
+    left: -69vw;
+    top: -21vh;
     background: #FFFFFF;
     border-radius: 10px;
 }
+
+
 
 #two_down_top{
     position: relative;
@@ -353,7 +355,7 @@
 
 #two_down_div1_1 p{
     position: absolute;
-    width: 121px;
+    width: 146px;
     height: 24px;
     font-family: 'Poppins';
     font-style: normal;
@@ -477,8 +479,114 @@
     width: 31vw;
     left: 4vw;
     top: 118vh;
-    height: 50vh;
+    height: 32vh;
     background: #FFFFFF;
     border: 1px solid rgba(91, 108, 172, 0.2);
     border-radius: 10px;
+}
+
+#two_down_div1_5_para2{
+    position: absolute;
+    width: 239px;
+    height: 15px;
+    left: 856px;
+    top: 593px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    
+    /* identical to box height */
+    text-align: center;
+    
+    /* Prosperity Light/CTA */
+    color: #8381F7;
+}
+
+#two_left_5{
+    position: absolute;
+    width: 12vw;
+    height: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #5B6CAC;
+    top: 24vh;
+    left: 2vw;
+}
+
+#dropdownMenuButton{
+    position: absolute;
+    width: 20vw;
+    height: 6vh;
+    color: #5B6CAC;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+    top: 28vh;
+    left: 2vw;
+    border: 0px;
+    text-align: left;
+    padding-left: 17px;
+    font-family: 'Poppins';
+}
+
+#two_left_6{
+    position: absolute;
+    width: 20vw;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #8381F7;
+    top: 35vh;
+    left: 2vw;
+}
+
+#two_left_7{
+    position: absolute;
+    width: 12vw;
+    height: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #5B6CAC;
+    top: 40vh;
+    left: 2vw;
+}
+
+#customRange1{
+    position: relative;
+    top: 44vh;
+    width: 20vw;
+    left: 2vw;
+}
+
+#two_left_8{
+    position: absolute;
+    width: 12vw;
+    height: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #5B6CAC;
+    top: 52vh;
+    left: 2vw;
+}
+
+#customRange2{
+    position: relative;
+    top: 53vh;
+    width: 20vw;
+    left: 2vw;
 }
