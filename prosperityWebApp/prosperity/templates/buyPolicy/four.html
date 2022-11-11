@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} <link rel="stylesheet" href="{% static 'bpOne.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'four.css' %}">
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <style>
+        html, body { height: 100%; width: 100%; margin: 0; }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <img id="four_top_img" src="{% static "media/bpfour.png" %}" alt="">
+
+    <div id="four_left">
+        <p id="four_left_Payment_Details">Payment Details</p>
+
+        <div id="four_left_div1">
+            <p id="four_left_div1_para1">UPI</p>
+            <div id="four_left_div1_box">
+                <div id="four_left_div1_box_div_gpay">
+                    <img src="{% static "media/googlepay.png" %}" alt="">
+                    <p>Google Pay</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        This UPI will be the primary payement method & the premium will auto debit every month on 10th
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div id="four_left_div2">
+            <p id="four_left_div1_para1">UPI</p>
+            <div id="four_left_div2_box">
+                <div style="left: 1vh; top: 2vh;" id="four_left_div1_box_div_gpay">
+                    <img style="height: 5vh;" src="{% static "media/bhim.png" %}" alt="">
+                    <p style="left:3vw;">BHIM</p>
+                </div>
+                <hr>
+                <div style="left: 1vh;" id="four_left_div1_box_div_gpay">
+                    <img style="height: 5vh;" src="{% static "media/paytm.png" %}" alt="">
+                    <p style="left:3vw;">Paytm</p>
+                </div>
+                <hr>
+                <div style="left: 1vh;" id="four_left_div1_box_div_gpay">
+                    <img style="height: 4vh;" src="{% static "media/addMore.png" %}" alt="">
+                    <p style="left:3vw;">Add Bew UPI ID</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="four_left_div3">
+            <p id="four_left_div1_para1">Cards</p>
+            <div style="height: 8vh;" id="four_left_div2_box">
+                <div style="left: 1vh; top: 2vh;" id="four_left_div1_box_div_gpay">
+                    <img style="height: 3.5vh;" src="{% static "media/bank2.png" %}" alt="">
+                    <p style="left:3vw;">XXXX6183</p>
+                    <div>Secure</div>
+                    <p style="left: 14vw;   font-size: 14px;">Delete</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="four_left_div4">
+            <p id="four_left_div1_para1">Net Banking</p>
+            <div style="height: 8vh;" id="four_left_div2_box">
+                <div style="left: 1vh; top: 2vh;" id="four_left_div1_box_div_gpay">
+                    <img style="height: 3.5vh;" src="{% static "media/bank1.png" %}" alt="">
+                    <p style="left:3vw; font-size: 16px;">Union Bank of India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="four_right">
+        <p id="four_right_para1">SUD LIfe Century Royale</p>
+        <div id="four_right_div1">
+            <i class="bi-check"></i>
+            <p>Savings Plan </p>
+        </div>
+        <div style="top: 14vh;" id="four_right_div1">
+            <i class="bi-check"></i>
+            <p>Policy Term: 40 Years </p>
+        </div>
+
+        <hr id="four_right_hr">
+
+        <div id="four_right_div2">
+            <p id="four_right_div2_para1">Annual Premium:</p>
+            <p id="four_right_div2_para2">₹ 98,920/-</p>
+        </div>
+
+        <div style="top: 27.5vh;" id="four_right_div2">
+            <p id="four_right_div2_para1">GST:</p>
+            <p style="left: 14.9vw;" id="four_right_div2_para2">₹ 2,920/-</p>
+        </div>
+
+        <hr style="top: 33vh;" id="four_right_hr">
+
+        <div style="top: 34.5vh;" id="four_right_div2">
+            <p style="font-size: 1.8vh;" id="four_right_div2_para1"><b>Total Premium:</b></p>
+            <p style="left: 13.5vw;" id="four_right_div2_para2"><b>₹ 1,00,920/-</b></p>
+        </div>
+
+    </div>
+
+    <a id="four_right_down" href="">Proceed</a>
+
+</body>
+</html>

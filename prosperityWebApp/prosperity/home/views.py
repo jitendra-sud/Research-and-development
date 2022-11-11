@@ -110,6 +110,9 @@ def two(request):
 def three(request):
     return render(request, 'buyPolicy/three.html')
 
+def four(request):
+    return render(request, 'buyPolicy/four.html')
+
 # Create your views here.
 
 
