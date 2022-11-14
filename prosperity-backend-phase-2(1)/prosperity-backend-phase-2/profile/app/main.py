@@ -9,7 +9,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 
 
-# templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="app/templates")
 
 
 app  = FastAPI()
@@ -19,22 +19,6 @@ app.mount(
     StaticFiles(directory="app/static"),
     name="static",
 )
-
-# @app.get("/profileDetails", response_model = schemas.ShowPersonalDetails)
-# async def show( request: Request):
-#     context = {'request': request}
-#     return templates.TemplateResponse("profiles/profileDetails.html",context)
-
-# @app.post("/profileDetails")
-# async def create(request: Request, name: str = Form(...), number: int = Form(...), email: str = Form(...), profession: str = Form(...) ):
-#     result = ({
-#         'name': name,
-#         'number': number,
-#         'email': email,
-#         'profession': profession
-#     })
-#     # context = {'request':request, 'result':result}
-#     return result
 
 app.include_router(feedback.router)
 app.include_router(personal_details.router)

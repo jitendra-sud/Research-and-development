@@ -114,11 +114,13 @@
   height: 47.87px;
   left: 577px;
   top: 462.69px;
-
   background: #FFFFFF;
   box-shadow: 0px 2.77516px 27.7516px rgba(44, 88, 255, 0.2);
   border-radius: 6.9379px;
   border: #c3c6cc;
+  font-family: 'Poppins';
+  font-size: 19px;
+  color: #12182e;
 }
 
 input[type="text"]::placeholder {
@@ -611,4 +613,3 @@ top: 112.79px; */
   margin-left: 155px;
   margin-top: -243px;
 }
-

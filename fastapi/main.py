@@ -12,9 +12,10 @@ from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 from pydantic import BaseModel, Field
 from typing import Optional
-
+import os
 
 app = FastAPI()
+
 
 app.mount(
     "/static",
@@ -39,15 +40,16 @@ async def yourself(request: Request):
 
 
 @app.post('/yourself')
-async def yourself(request: Request, userName: str = Body(...), img: UploadFile = File(...)):    
-    result = ({
-        'name': userName,
-        'img': img
+async def yourself(request: Request):    
+    form = await request.form()
+    user = ({
+        'name': form.get("userName"),
+        'img': form.get("img"),
+        
     })
-    context = {'request': request, 'result': result}
-    print(result['name'])
-    # result = Profile.insert_one(result)
-    return result
+    context = {'request': request, 'user': user}
+    print(user['name'])
+    return templates.TemplateResponse("genderDob.html",context)
 
 
 ## Height and weight ##############################################################
@@ -81,9 +83,12 @@ async def genderDob(request: Request):
 
 @app.post("/genderDob")
 async def genderDob(request: Request,gender: str = Form(...), dob: str = Form(...)):
-    result = ({
-        'Gender': gender,
-        'dob': dob
+    form = await request.form()
+    user = ({
+        'gender': form.get("gender"),
+        'dob': form.get("dob"),
+        
     })
-    context = {'request': request}       
-    return result
+    print(user['gender'])
+    context = {'request': request, 'user': user}       
+    return templates.TemplateResponse("heightWeight.html",context)
