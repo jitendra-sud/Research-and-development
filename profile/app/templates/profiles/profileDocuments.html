@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+   
+    
+    <link rel="stylesheet" href="{{ url_for('static', path='/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/profileDetails.css') }}">
+   
+    <title>ProfileDocuments</title>
+
+    <style>
+        .spanclass{
+            font-size: 14px;
+            color: red;
+            margin-left: 20px;
+            padding: 9px;
+            border-radius: 7px;
+            position: relative;
+            width: 29vw;
+            left: 19.5vw;
+            top: -12.5vh;
+          }
+
+          output{
+            position: relative;
+            top: -12.5vh;
+            left: 21vw;
+            width: 23vw;
+            color: #475897;
+            font-family: Poppins;
+          }
+    </style>
+
+</head>
+<body>
+
+    <nav style="height:110px;" class="navbar navbar-expand-xl navbar-dark">
+        <a style="color:#5B6CAC; font-size:40px; font-width:10px" href="#" class="navbar-brand"><b>Prosperity</b></a>  		
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">		
+            <div  style="margin-right:120px" class="navbar-nav ml-auto">
+                <a style="color:#5B6CAC" href="#" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Home</span></a>
+                <a style="color:#5B6CAC" href="#" class="nav-item nav-link"><i class="fa fa-gears"></i><span>My Trends</span></a>
+                <a style="color:#5B6CAC" href="#" class="nav-item nav-link"><i class="fa fa-users"></i><span>Measure</span></a>
+                <a style="color:#5B6CAC" href="#" class="nav-item nav-link"><i class="fa fa-pie-chart"></i><span>Buy Policy</span></a>
+                <a style="color:#5B6CAC" href="#" class="nav-item nav-link"><i class="fa fa-briefcase"></i><span>Support</span></a>
+                <a style="color:#5B6CAC" href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Menu</span></a>		
+            </div>
+        </div>
+    </nav>    
+
+    <div class="grid-container boarder" style="height:188px; background:#8381F7">
+        <div class="grid-item"><img class="pic" src="{{ url_for('static', path='/media/Rectangle 199.jpg') }}" alt=""></div>
+        <div class="grid-item"><p class="name">Swapnil Nikam</p></div>
+        <div class="grid-item"><p class="des">UX Designer</p></div>
+    </div>
+
+    <div class="grid-container lower">
+        <div style="width:120px; height: 900px; background:#8381F7"></div>
+
+        <div class="grid-container leftbar">
+            <a class="grid-item" href="/profileDetails"><i class="bi-credit-card-2-front-fill"></i>Pesonal Details</a>
+            <a style="background:#ffff" href="/profileDocuments" class="grid-item"><i  class="bi-card-heading"></i>Documents</a>
+            <a href="/profileCoverage" class="grid-item" ><i  class="bi-shield-fill-plus"></i>My Coverage</a>
+            <a href="/profileNotification" class="grid-item" ><i  class="bi-bell"></i>Notification</a>
+            <a href="/profilePayments" class="grid-item" ><i  class="bi-cash"></i>Manage Payments</a>
+            <a href="/profileFeedback" class="grid-item" ><i  class="bi-chat-left-fill"></i>Feedback</a>
+            <a href="/profileAbout" class="grid-item" ><i  class="bi-info-circle"></i>About Us</a>
+            <div style="margin-top: -10px"><button class="logout"><a href="/"><p style="margin-top:10px">Log Out</p></a></button></div>
+        </div>
+
+        <form name="fname" action="" method="POST" enctype="multipart/form-data" onsubmit="return validateForm();">
+            
+           
+            <div class="grid-container rightgrid">
+              <div class="grid-item">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <i class="bi-credit-card-2-front-fill"></i>
+                        <div class="grid-container middel">
+                            <p id="first">Address Proof:</p>
+                            <p id="second">Aadhar Card</p>
+                        </div>
+                        <label style="margin-top:22px" for="addhar">
+                            <i style="font-size:24px; margin-left:40px" class="bi-plus-circle-fill"></i>
+                        </label>
+                        <input name="addhar" style="display: none;" type="file" name="" id="addhar" accept=".jpg, .jpeg, .png, .pdf, .deb" oninput="opAddhar.value=files[0].name" required > 
+                        
+                    </div>
+                    <output for="addhar" id="opAddhar" name="opAddhar"></output>
+                    <div class="spanclass" id="addhar_err"></div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <i class="bi-credit-card-2-front-fill"></i>
+                        <div class="grid-container middel">
+                            <p id="first">Income Tax Proof:</p>
+                            <p id="second">Pan Card</p>
+                        </div>
+                        <label style="margin-top:22px" for="pan">
+                            <i style="font-size:24px; margin-left:40px" class="bi-plus-circle-fill"></i>
+                        </label>
+                        <input name="pan" style="  display: none;" type="file" name="" id="pan" accept=".jpg, .jpeg, .png, .pdf , .deb"  oninput="opPan.value=files[0].name" required> 
+                    </div>
+                    <output for="pan" id="opPan" name="opPan"></output>
+                    <div class="spanclass" id="pan_err"></div>
+                </div>
+              </div>
+            </div>
+
+            <input type="submit" name="" id="" value="submit">
+        </form>
+        
+
+    </div>     
+
+  
+      
+    <script type="text/javascript">
+        
+        function clearError(){
+            document.getElementById("addhar_err").innerHTML = "";
+            document.getElementById("pan_err").innerHTML = "";
+        }
+    
+        function setError(id, error){
+            document.getElementById(id).innerHTML = error;
+        }
+    
+        function validateForm(){
+            clearError();
+    
+            var addhar = document.forms["fname"]["addhar"].files[0].value;
+            var pan = document.forms["fname"]["pan"].files[0].value; 
+            var adharsize = document.getElementById('addhar').files[0].size;
+            var pansize = document.getElementById('pan').files[0].size;
+            
+            var res = true;
+
+        
+            if(adharsize/1024000 >= 4){
+              setError("addhar_err","*Size of Addhaar file is too large, size of file should be less than 4MB...")
+              res = false;
+            }
+
+            if(pansize/1024000 >= 4){
+                setError("pan_err","*Size of Pan file is too large, size of file should be less than 4MB...")
+                res = false;
+            }
+
+            return res;
+        }    
+    </script>
+      
+
+</body>
+</html>
