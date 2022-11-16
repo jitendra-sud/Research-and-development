@@ -1,0 +1,172 @@
+#bmi_left_img{
+    position: relative;
+    top: 11vh;
+    left: 9vw;
+    width: 24vw;
+}
+
+#bmi_left_bmi_div{
+    position: relative;
+    width: 7vh;
+    height: 2vh;
+    background: #FFFFFF;
+    top: -147vh;
+    left: 19vw;
+}
+
+#bmi_left_bmi_div a{
+    position: absolute;
+    width: 7vw;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    color: #5B6CAC;
+    text-decoration: none;
+    cursor: pointer
+} 
+
+#bmi_left_bmi_div a i{
+    position: relative;
+    top: 0.3vh;
+    left: 0.5vw;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+#bmi_middle{
+    position: relative;
+    top: -180vh;
+    left: 39vw;
+}
+
+#bmi_middle_1{
+    position: relative;
+    width: 44px;
+    height: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5vh;
+    line-height: 36px;
+    color: #5B6CAC;
+}
+
+#bmi_middle_2{
+    position: relative;
+    top: 2vh;
+}
+
+#bmi_middle_2_para1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.3vh;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+}
+
+#bmi_middle_2_para1_male_lable{
+    position: absolute;
+    width: 6.5vw;
+    height: 6vh;
+    left: 4vw;
+    top: 6vh;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.2);
+    border-radius: 10px;
+    border: 0px;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+#bmi_middle_2_para1_male_lable_male{
+    appearance: none;
+    height: 6vh;
+    width: 6.5vw;
+    color: #a662de;
+    font-size: 114%;
+    background: white;
+    font-weight: 700;
+    padding: 17px 35px;
+}
+
+#bmi_middle_2_para1_female_lable{
+    position: absolute;
+    width: 6.5vw;
+    height: 6vh;
+    left: 12vw;
+    top: 6vh;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.2);
+    border-radius: 10px;
+    border: 0px;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+#bmi_middle_2_para1_female_lable_female{
+    appearance: none;
+    height: 6vh;
+    width: 6.5vw;
+    color: #a662de;
+    font-size: 114%;
+    background: white;
+    font-weight: 700;
+    padding: 17px 28px;
+}
+
+#bmi_middle_3{
+
+}
+
+#bmi_middle_3_para1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.3vh;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+    top: 13vh;
+    position: relative;
+}
+
+#bmi_middle_4_para1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.3vh;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+    top: 22vh;
+    position: relative;
+}
+
+
+#bmi_middle_4_div1{
+    position: relative;
+    top: -5vh;
+}
+
+#bmi_middle_4_div1_para1{
+    position: relative;
+    top: 33vh;
+    left: 1.6vw;
+    color: #5B6CAC;
+    font-size: 132%;
+    font-family: 'Poppins';
+}
+
+#bmi_middle_4_div1_para2{
+    position: relative;
+    top: 28vh;
+    left: 19.6vw;
+    color: #5B6CAC;
+    font-size: 132%;
+    font-family: 'Poppins';
+}

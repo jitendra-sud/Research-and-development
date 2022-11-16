@@ -113,6 +113,11 @@ def three(request):
 def four(request):
     return render(request, 'buyPolicy/four.html')
 
+
+
+def mes_bmi(request):
+    return render(request, 'measures/bmi.html')
+
 # Create your views here.
 
 

@@ -42,5 +42,7 @@ urlpatterns = [
     path("three",views.three, name = 'three'),
     path("four",views.four, name = 'four'),
 
+    path("mes_bmi",views.mes_bmi, name = 'mes_bmi'),
+
     
 ]

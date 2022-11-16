@@ -47,6 +47,8 @@ urlpatterns = [
     path("two",include('home.urls')),
     path("three",include('home.urls')), 
     path("four",include('home.urls')), 
+
+    path("mes_bmi",include('home.urls')), 
     
 ]
 
