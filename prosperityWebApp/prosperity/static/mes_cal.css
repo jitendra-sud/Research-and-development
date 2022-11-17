@@ -1,0 +1,94 @@
+#cal_middle_div4{
+    position: absolute;
+    top: 70vh;
+    left: 39vw;
+}
+
+#cal_middle_div3_para1{
+    position: absolute;
+    width: 77px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.2vh;
+    line-height: 24px;
+    color: #5B6CAC;
+    top: -4vh;
+}
+
+#cal_middle_div3_input{
+    position: absolute;
+    width: 22vw;
+    height: 7vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 19px;
+    border: 0px;
+    color: #5B6CAC;
+    font-family: 'Poppins';
+    font-size: 2vh;
+    padding: 0px 31px;
+}
+
+#cal_middle_div3_para2{
+    position: absolute;
+    width: 15vw;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4vh;
+    line-height: 24px;
+    color: #5B6CAC;
+    top: 9vh;
+}
+
+#bp_middle_div6{
+    position: absolute;
+    width: 51px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.3vh;
+    line-height: 24px;
+    text-align: center;
+    color: #5B6CAC;
+    top: 75vh;
+left: 57.5vw;
+}
+
+#bp_middle_div6_hr{
+    position: absolute;
+    width: 21vw;
+    height: 0px;
+    left: 40vw;
+    top: 81vh;
+    opacity: 0.1;
+    border: 1px solid #5B6CAC;
+}
+
+#bp_middle_div7{
+    position: absolute;
+    top: 85vh;
+    left: 39vw;
+}
+
+#bp_middle_div7 label{
+    font-family: 'Poppins';
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    font-weight: 700;
+}
+
+#bp_middle_div7 label i{
+    font-size: 2.5vh;
+    margin-left: 40px;
+    position: absolute;
+    left: 19vw;
+}
+
+#bp_middle_div7 input{
+    display: none;
+}

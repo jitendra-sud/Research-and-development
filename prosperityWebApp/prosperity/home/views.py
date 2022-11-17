@@ -118,6 +118,21 @@ def four(request):
 def mes_bmi(request):
     return render(request, 'measures/bmi.html')
 
+def mes_heartRate(request):
+    return render(request, 'measures/heartRate.html')
+
+def mes_sleep(request):
+    return render(request, 'measures/sleep.html')
+
+def mes_waterIntake(request):
+    return render(request, 'measures/waterIntake.html')
+
+def mes_calories(request):
+    return render(request, 'measures/calories.html')
+
+def mes_bp(request):
+    return render(request, 'measures/bp.html')
+
 # Create your views here.
 
 

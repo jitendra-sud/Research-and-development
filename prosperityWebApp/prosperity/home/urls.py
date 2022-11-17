@@ -43,6 +43,10 @@ urlpatterns = [
     path("four",views.four, name = 'four'),
 
     path("mes_bmi",views.mes_bmi, name = 'mes_bmi'),
-
+    path("mes_heartRate",views.mes_heartRate, name = 'mes_heartRate'),
+    path("mes_sleep",views.mes_sleep, name = 'mes_sleep'),
+    path("mes_waterIntake",views.mes_waterIntake, name = 'mes_waterIntake'),
+    path("mes_calories",views.mes_calories, name = 'mes_calories'),
+    path("mes_bp",views.mes_bp, name = 'mes_bp'),
     
 ]

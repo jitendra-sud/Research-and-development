@@ -170,3 +170,31 @@
     font-size: 132%;
     font-family: 'Poppins';
 }
+
+#bmi_middle_5{
+
+}
+
+#bmi_middle_5_para1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.3vh;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+    top: 25vh;
+    position: relative;
+}
+
+#bmi_middle_6{
+
+    position: relative;
+    width: 320px;
+    height: 50px;
+    
+    /* Prosperity Light/CTA */
+    background: #8381F7;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.2);
+    border-radius: 10px;
+}

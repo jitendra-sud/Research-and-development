@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %} <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
     {% load static %} <link rel="stylesheet" href="{% static 'mes_bmi.css' %}">
-    {% load static %} <link rel="stylesheet" href="{% static 'genderDob.css' %}">
     {% load static %} <link rel="stylesheet" href="{% static 'health.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_hr.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_steps.css' %}">
     <link rel="stylesheet" href="{% static 'genderDob.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -85,87 +86,68 @@
         </div>
     </div>  
 
-    <div id="bmi_middle">
-        <p id="bmi_middle_1">BMI</p>
-        <div id="bmi_middle_2">
-            <p id="bmi_middle_2_para1">Gender</p>
-            <select id="bmi_middle_2_para1_male_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                <option id="bmi_middle_2_para1_male_lable_male" value="1">Male</option>
-            </select>
-            <select id="bmi_middle_2_para1_female_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                <option id="bmi_middle_2_para1_female_lable_female" value="1">Female</option>
-            </select>
-        </div>
-        <div id="bmi_middle_3">
-            <p id="bmi_middle_3_para1">How Old Are You ?</p>
+    <div id="hr_middle">
+        <div id="hr_middle_div1">
+            <p id="hr_middle_div1_para1" style="width:15vw;">Water Intake</p>
+            <a href=""><i class="bi-arrow-repeat"></i></a>
         </div>
 
-        <div id="bmi_middle_4">
-            <p id="bmi_middle_4_para1">How Long ?</p>
-            <div id="bmi_middle_4_div1">
-                <div id="feet" >'</div>
-                <div id="inches">"</div>
-                <output for="height"  id="rangevalue1" name="rangevalue1">5.1</output>
-                <input name="height" id="range1" type="range" min="4" max="7" step="0.10" value="5" oninput="rangevalue1.value=value" />
-                <p id="bmi_middle_4_div1_para1">4'</p>
-                <p id="bmi_middle_4_div1_para2">7'</p>
-            </div>
+        <img id="steps_middle_div2" src="{% static "media/mes_wi1.png" %}" alt="">
+
+        <div id="steps_middle_div3">
+            <p>Today</p>
+            <p style="left: 17vw;">04/05/22</p>
         </div>
 
-        <div id="bmi_middle_5">
-            <p id="bmi_middle_5_para1" style="font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 2.3vh;
-            line-height: 24px;
-            text-transform: capitalize;
-            color: #5B6CAC;
-            top: 25vh;
-            position: relative;">What is your Weight ?</p>
+        <img id="wi_middle_div4" src="{% static "media/mes_wi2.png" %}" alt="">
+
+        <div class="qty mt-5">
+            <div id="steps_middle_div5_plus" class="minus "><p>-</p></div>
+            <input type="text" class="count" id="wi_middle_div5" name="qty" value="2">
+            <div id="steps_middle_div5_minus" class="plus "><p>+</p></div>
         </div>
 
-        <input type="submit" value="Calculate" id="bmi_middle_6" style="position: relative;
-        width: 20vw;
-        height: 6vh;
-        background: #8381F7;
-        box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.2);
-        border-radius: 10px;
-        top: 37vh;
-        font-family: 'Poppins';
-        color: #FFF;
-        font-size: 2vh;">
+        <div id="wi_middle_div7">
+            <p id="wi_middle_div7_para1">glasses</p>
+            <p id="wi_middle_div7_para2">(1000 ml)</p>
+        </div>
+        <input style="left: 39.5vw; top: 106vh; position: absolute;" type="submit" name="" id="steps_middle_div6" value="Record">
     </div>
 
-   
-    <script>
-        const rangeInputs = document.querySelectorAll('input[type="range"]')
-        function handleInputChange(e) {
-          let target = e.target
-          if (e.target.type !== 'range') {
-            target = document.getElementById('range')
-          } 
-          const min = target.min
-          const max = target.max
-          const val = target.value
-          
-          target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
-        }
-        
-        rangeInputs.forEach(input => {
-          input.addEventListener('input', handleInputChange)
-        })
+    <div id="hr_right">
+        <p id="hr_right_para1">Hi Jitendra, You finishes</p>
+        <div id="hr_right_div1">
+            <img id="hr_right_div1_img" src="{% static "media/mes_hr2.png" %}" alt="">
+            <p id="hr_right_div1_para1">03/12</p>
+            <p id="hr_right_div1_para2">Measured</p>
+        </div>
+        <div id="hr_right_div2">
+            <p id="hr_right_div2_para1">Sync Google fit</p>
+            <a href=""><i id="hr_right_div2_icon" class="bi-arrow-repeat"></i></a>
+        </div>
+    </div>
 
-        function change(i) {  
-          var doc = document.getElementById("text");  
-          var color =[ "black", "blue", "brown", "green"];  
-          for(i=0; i<color.length; i++){  
-               doc.style.color = color[i];  
-           }
-        }  
-       setInterval(function changebackground(){change(0)},1000);
-        
-   
-      </script>
+    
+
+    <script>
+        $(document).ready(function(){
+		    $('.count').prop('disabled', true);
+   			$(document).on('click','.plus',function(){
+				$('.count').val(parseInt($('.count').val()) + 1 );
+    		});
+        	$(document).on('click','.minus',function(){
+    			$('.count').val(parseInt($('.count').val()) - 1 );
+    				if ($('.count').val() == 0) {
+						$('.count').val(1);
+					}
+    	    	});
+ 		});
+    </script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 </html>
 

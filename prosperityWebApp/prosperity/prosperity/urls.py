@@ -49,7 +49,11 @@ urlpatterns = [
     path("four",include('home.urls')), 
 
     path("mes_bmi",include('home.urls')), 
-    
+    path("mes_heartRate",include('home.urls')), 
+    path("mes_sleep",include('home.urls')), 
+    path("mes_waterIntake",include('home.urls')), 
+    path("mes_calories",include('home.urls')), 
+    path("mes_bp",include('home.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
