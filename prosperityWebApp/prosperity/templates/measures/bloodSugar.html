@@ -89,36 +89,32 @@
 
     <div id="hr_middle">
         <div id="hr_middle_div1">
-            <p id="hr_middle_div1_para1" style="width:15vw;">Calories</p>
+            <p id="hr_middle_div1_para1" style="width: 18vw;">Blood Sugar</p>
             <a href=""><i class="bi-arrow-repeat"></i></a>
         </div>
 
-        <img id="steps_middle_div2" src="{% static "media/mes_cal.png" %}" alt="">
+        <img id="steps_middle_div2" src="{% static "media/bs.png" %}" alt="">
 
         <div id="steps_middle_div3">
             <p>Today</p>
             <p style="left: 17vw;">04/05/22</p>
         </div>
 
-        <div id="cal_middle_div4">
-            <p id="cal_middle_div3_para1">Breakfast</p>
-            <input type="text" id="cal_middle_div3_input" placeholder="2 Roti, Sabji (600 kcal)">
-            <p id="cal_middle_div3_para2">Upload your Meal</p>
+        <p id="steps_middle_div5" style="top: 70vh; left: 48vw;"><b>120</b></p>
+
+        <p id="bp_middle_div6" >mg/dL</p>
+
+        <hr id="bp_middle_div6_hr">
+
+        <div id="bp_middle_div7">
+            <label for="reports">Upload Report
+                <i style="font-size:24px; margin-left:40px" class="bi-plus-circle-fill"></i>
+            </label>
+            <input type="file" name="reports" id="reports">
+            
         </div>
 
-        <div id="cal_middle_div4" style="top: 89vh;">
-            <p id="cal_middle_div3_para1">Lunch</p>
-            <input type="text" id="cal_middle_div3_input" placeholder="2 Roti, Sabji (600 kcal)">
-            <p id="cal_middle_div3_para2">Upload your Meal</p>
-        </div>
-
-        <div id="cal_middle_div4" style="top: 108vh;">
-            <p id="cal_middle_div3_para1">Dinner</p>
-            <input type="text" id="cal_middle_div3_input" placeholder="2 Roti, Sabji (600 kcal)">
-            <p id="cal_middle_div3_para2">Upload your Meal</p>
-        </div>
-
-        <input style="left: 38.5vw; top: 127vh; position: absolute;" type="submit" name="" id="steps_middle_div6" value="Record">
+        <input type="submit" name="" id="steps_middle_div6" value="Record" style="top: -131vh; left: 14.5vw;">
     </div>
 
     <div id="hr_right">
@@ -134,6 +130,11 @@
         </div>
     </div>
 
+    
+
+    
+
+   
 
 </body>
 </html>

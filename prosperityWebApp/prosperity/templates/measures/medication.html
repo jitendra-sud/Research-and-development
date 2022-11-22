@@ -89,36 +89,58 @@
 
     <div id="hr_middle">
         <div id="hr_middle_div1">
-            <p id="hr_middle_div1_para1" style="width:15vw;">Calories</p>
-            <a href=""><i class="bi-arrow-repeat"></i></a>
+            <p id="hr_middle_div1_para1" style="width: 26vw; font-size: 3.2vh;">Medication & other intake</p>
         </div>
 
-        <img id="steps_middle_div2" src="{% static "media/mes_cal.png" %}" alt="">
+        <img id="steps_middle_div2" style="top:-177vh" src="{% static "media/mes_medication.png" %}" alt="">
 
-        <div id="steps_middle_div3">
-            <p>Today</p>
-            <p style="left: 17vw;">04/05/22</p>
-        </div>
 
-        <div id="cal_middle_div4">
-            <p id="cal_middle_div3_para1">Breakfast</p>
-            <input type="text" id="cal_middle_div3_input" placeholder="2 Roti, Sabji (600 kcal)">
-            <p id="cal_middle_div3_para2">Upload your Meal</p>
-        </div>
+        <div style="top: 65vh;" id="cal_middle_div4">
+            <p id="cal_middle_div3_para1" style="width: 16vw;">Medication Level</p>
+            <input type="text" id="cal_middle_div3_input" placeholder="High">
+            <label for="reports" style="  position: absolute;
+            width: 23vw;
+            height: 24px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.2vh;
+            line-height: 24px;
+            color: #5B6CAC;
+            top: 10vh;
+          }">Upload Doctor’s prescription
+                <i style="font-size:24px; margin-left:68px" class="bi-plus-circle-fill"></i>
+            </label>
+            <input style="display: none;" type="file" name="reports" id="reports">
+        </div> 
+        
+        <hr style="position: absolute;
+        width: 21.5vw;
+        height: 0px;
+        left: 39vw;
+        top: 80vh;
+        opacity: 0.1;
+        border: 1px solid #5B6CAC;">
 
         <div id="cal_middle_div4" style="top: 89vh;">
-            <p id="cal_middle_div3_para1">Lunch</p>
-            <input type="text" id="cal_middle_div3_input" placeholder="2 Roti, Sabji (600 kcal)">
-            <p id="cal_middle_div3_para2">Upload your Meal</p>
+            <p style="width: 14vw;" id="cal_middle_div3_para1">Alcohol Level</p>
+            <input type="text" id="cal_middle_div3_input" placeholder="High">
+        </div>
+ 
+        <hr style="position: absolute;
+        width: 21.5vw;
+        height: 0px;
+        left: 39vw;
+        top: 98vh;
+        opacity: 0.1;
+        border: 1px solid #5B6CAC;">
+
+        <div id="cal_middle_div4" style="top: 107vh;">
+            <p  style="width: 14vw;" id="cal_middle_div3_para1">Smoking Level</p>
+            <input type="text" id="cal_middle_div3_input" placeholder="None">
         </div>
 
-        <div id="cal_middle_div4" style="top: 108vh;">
-            <p id="cal_middle_div3_para1">Dinner</p>
-            <input type="text" id="cal_middle_div3_input" placeholder="2 Roti, Sabji (600 kcal)">
-            <p id="cal_middle_div3_para2">Upload your Meal</p>
-        </div>
-
-        <input style="left: 38.5vw; top: 127vh; position: absolute;" type="submit" name="" id="steps_middle_div6" value="Record">
+        <input style="left: 38.5vw; top: 120vh; position: absolute;" type="submit" name="" id="steps_middle_div6" value="Record">
     </div>
 
     <div id="hr_right">

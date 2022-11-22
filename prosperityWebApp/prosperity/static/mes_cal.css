@@ -92,3 +92,32 @@ left: 57.5vw;
 #bp_middle_div7 input{
     display: none;
 }
+
+#mentalHealth_StartGame{
+    position: absolute;
+    width: 20.5vw;
+    height: 6vh;
+    font-family: 'Poppins';
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+    color: #5B6CAC;
+    top: 6vh;
+    left: 1vw;
+    text-align: center;
+    padding: 14px;
+    font-size: 2vh;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#bp_middle_div7{
+    box-sizing: border-box;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    border: 1px solid #5B6CAC;
+    filter: drop-shadow(0px 4px 20px rgba(44, 88, 255, 0.1));
+    border-radius: 10px;
+}

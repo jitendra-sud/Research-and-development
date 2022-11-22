@@ -48,5 +48,13 @@ urlpatterns = [
     path("mes_waterIntake",views.mes_waterIntake, name = 'mes_waterIntake'),
     path("mes_calories",views.mes_calories, name = 'mes_calories'),
     path("mes_bp",views.mes_bp, name = 'mes_bp'),
+    path("mes_bs",views.mes_bs, name = 'mes_bs'),
+    path("mes_immunity",views.mes_immunity, name = 'mes_immunity'),
+    path("mes_mentalHealth",views.mes_mentalHealth, name = 'mes_mentalHealth'),
+    path("mes_eyeVision",views.mes_eyeVision, name = 'mes_eyeVision'),
+    path("mes_eyeTest1",views.mes_eyeTest1, name = 'mes_eyeTest1'),
+    path("mes_eyeTest2",views.mes_eyeTest2, name = 'mes_eyeTest2'),
+    path("mes_eyeTest3",views.mes_eyeTest3, name = 'mes_eyeTest3'),
+    path("mes_medication",views.mes_medication, name = 'mes_medication'),
     
 ]

@@ -54,6 +54,16 @@ urlpatterns = [
     path("mes_waterIntake",include('home.urls')), 
     path("mes_calories",include('home.urls')), 
     path("mes_bp",include('home.urls')),
+    path("mes_bs",include('home.urls')),
+    path("mes_immunity",include('home.urls')),
+    path("mes_mentalHealth",include('home.urls')),
+    path("mes_eyeVision",include('home.urls')),
+    path("mes_eyeTest1",include('home.urls')),
+    path("mes_eyeTest2",include('home.urls')),
+    path("mes_eyeTest3",include('home.urls')),
+    path("mes_medication",include('home.urls')),
+
 ]
+
 
 urlpatterns += staticfiles_urlpatterns()

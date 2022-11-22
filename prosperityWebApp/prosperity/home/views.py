@@ -133,6 +133,30 @@ def mes_calories(request):
 def mes_bp(request):
     return render(request, 'measures/bp.html')
 
+def mes_bs(request):
+    return render(request, 'measures/bloodSugar.html')
+
+def mes_immunity(request):
+    return render(request, 'measures/immunity.html')
+
+def mes_mentalHealth(request):
+    return render(request, 'measures/mentalHealth.html')
+
+def mes_eyeVision(request):
+    return render(request, 'measures/eyeVision.html')
+
+def mes_eyeTest1(request):
+    return render(request, 'measures/eyeTest1.html')
+
+def mes_eyeTest2(request):
+    return render(request, 'measures/eyeTest2.html')
+
+def mes_eyeTest3(request):
+    return render(request, 'measures/eyeTest3.html')
+
+def mes_medication(request):
+    return render(request, 'measures/medication.html')
+
 # Create your views here.
 
 
