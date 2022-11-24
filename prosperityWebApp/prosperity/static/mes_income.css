@@ -1,0 +1,172 @@
+#income_left_div {
+    position: absolute;
+    top: 180vh;
+}
+
+#income_middle {
+    position: absolute;
+    top: 209vh;
+}
+
+#income_middle_div5 {
+    position: absolute;
+    width: 23vw;
+    height: 7vh;
+    background: #8381F7;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.2);
+    border-radius: 10px;
+    top: -105vh;
+    left: 39.5vw;
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 2.5vh;
+}
+
+#income_middle_div2 {
+    position: absolute;
+    top: -171vh;
+    left: 47vw;
+}
+
+#income_middle_div2_para1 {
+    position: absolute;
+    width: 10vw;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vh;
+    line-height: 18px;
+    color: #5B6CAC;
+    opacity: 0.75;
+}
+
+#income_middle_div2_para2 {
+    position: absolute;
+    width: 10vw;
+    height: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5vh;
+    line-height: 96px;
+    color: #5B6CAC;
+    left: -1.5vw;
+}
+
+#income_middle_div1 {
+    position: absolute;
+    top: -155vh;
+    left: 39vw;
+}
+
+#income_middle_div1_para1 {
+    position: absolute;
+    width: 16vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2vh;
+    line-height: 24px;
+    color: #5B6CAC;
+    top: -4vh;
+}
+
+#selected{
+    position: absolute;
+    width: 16vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2vh;
+    line-height: 24px;
+    color: #5B6CAC;
+    top: -4vh;
+}
+
+#dropdownMenuButton {
+    position: absolute;
+    width: 23vw;
+    height: 7vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+    border: 0px;
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+}
+
+#dropdownMenuButton option {
+    position: absolute;
+    transform: translate3d(0px, 54px, 0px);
+    top: 0vh;
+    left: 0px;
+    will-change: transform;
+    border: 0px;
+    width: 23vw;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border: 0px;
+}
+
+#income_middle_div3{
+    position: absolute;
+    top: -140vh;
+    left: 39vw;
+}
+
+#income_middle_div3_input{
+    position: absolute;
+    width: 23vw;
+    height: 7vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+    border: 0px;
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+}
+
+#income_middle_hr{
+    position: absolute;
+    width: 23vw;
+    height: 0px;
+    opacity: 0.1;
+    border: 1px solid #5B6CAC;
+    top: -132vh;
+    left: 39vw;
+}
+
+#income_middle_div4{
+    position: absolute;
+    top: -122vh;
+    left: 39vw;
+    border: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+    border: 0px;
+    height: 22vh;
+    width: 23vw;
+}
+
+#income_middle_div4_input{
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: 1vh;
+    position: relative;
+    width: 23vw;
+}
+
+#income_middle_div4_hr{
+    position: absolute;
+    width: 21vw;
+    height: 0px;
+    opacity: 0.1;
+    border: 1px solid #5B6CAC;
+    top: 6vh;
+    left: 1vw; 
+}

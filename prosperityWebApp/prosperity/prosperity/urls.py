@@ -63,6 +63,9 @@ urlpatterns = [
     path("mes_eyeTest3",include('home.urls')),
     path("mes_medication",include('home.urls')),
 
+    path("mes_income",include('home.urls')),
+    path("mes_expense",include('home.urls')),
+
 ]
 
 

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %} <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_bmi.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'health.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_hr.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_income.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_expense.css' %}">
+    <link rel="stylesheet" href="{% static 'genderDob.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <style>
+        html, body { height: 100%; width: 100%; margin: 0; }
+    </style>
+</head>
+
+
+<body style="background: #F6F9FF">
+    {% include 'navbar.html' %}
+
+    <div id="health_wealth" class="grid-container">
+        <div class="grid-item grid-container">
+            <a  id="health" class="grid-item" href="">Health</a>
+            
+        </div>
+        
+        <a id="wealth" class="grid-item" href="">Wealth</a>
+        <div style="left: 52vw;" id="underline" class="grid-item"></div>
+    </div>
+
+    <hr id="hr">
+    
+    <div id="bmi_left" class="">
+        <img id="bmi_left_img" src="{% static "media/mes_wealth.png" %}" alt="">
+
+        <div id="income_left_div">
+            <div id="bmi_left_bmi_div" style="top: -146.5vh; left: 18.5vw; width: 7vw; height: 2.3vh;">
+                <a href="mes_income"> Income <i class="bi-arrow-clockwise"></i></a>
+            </div>
+    
+            <div id="bmi_left_bmi_div" style="top: -136.5vh; left: 17.5vw; width: 6vw; height: 2.3vh;">
+                <a href="mes_expense"> Expense <i class="bi-arrow-clockwise"></i></a>
+            </div>
+    
+            <div id="bmi_left_bmi_div" style="top: -127vh; left: 18.5vw; width: 10vw; height: 2.3vh;">
+                <a href=""> Savings <i class="bi-arrow-clockwise"></i></a>
+            </div>
+    
+            <div id="bmi_left_bmi_div" style="top: -117vh;  left: 16.5vw; width: 8vw; height: 2.3vh;">
+                <a href="mes_sleep" style="width:9vw;"> Emergency Funds</a>
+            </div>
+    
+            <div id="bmi_left_bmi_div" style="top: -108vh; left: 18.5vw; width: 5vw; height: 2.3vh;">
+                <a href="mes_waterIntake"> Assets </a>
+            </div>
+    
+            <div id="bmi_left_bmi_div" style="top: -98vh; left: 18vw; width: 6vw; height: 2.3vh;">
+                <a href="mes_calories"> Investments</a>
+            </div>
+    
+            <div id="bmi_left_bmi_div" style="top: -88vh; left: 18vw; width: 6vw; height: 2.3vh;">
+                <a href="mes_bp"> Liability </a>
+            </div>
+    
+            <div id="bmi_left_bmi_div" style="top: -79vh; left: 18vw; width: 6vw; height: 2.3vh;">
+                <a href="mes_bs"> Insurance  </a>
+            </div>
+        </div>
+    </div>  
+
+    <div id="income_middle" style=" position: absolute; top: 209vh;" >
+        <div id="hr_middle_div1">
+            <p id="hr_middle_div1_para1">Expense</p>
+        </div>
+
+        <p id="expense_para1">Enter Your Total Monthly Expense</p>
+
+        <div id="expense_div1">
+            <div id="expense_div1_hr">
+                <label id="house_rent_label" for="house_rent">House Rent
+                    <img id="house_rent_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction1()" inputmode="numeric" name="" id="house_rent"  style="top: -1vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="utility_bill_label" for="utility_bill">Utility Bills
+                    <img id="utility_bill_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction2()" inputmode="numeric" name="" id="utility_bill" value=""  style="top: -3vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr" style="top: 15vh;">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="groceries_label" for="groceries">Groceries 
+                    <img id="groceries_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction3()" inputmode="numeric" name="" id="groceries" value=""  style="top: -4vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr" style="top: 23vh;">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="travel_label" for="travel">Travel 
+                    <img id="travel_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction4()" inputmode="numeric" name="" id="travel" value=""  style="top: -5vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr" style="top: 31vh;">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="clothing_label" for="clothing">Clothing 
+                    <img id="clothing_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction5()" inputmode="numeric" name="" id="clothing" value=""  style="top: -7vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr" style="top: 41vh;">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="education_label" for="education">Education 
+                    <img id="education_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction6()" inputmode="numeric" name="" id="education" value=""  style="top: -7vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr" style="top: 50vh;">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="investments_label" for="investments">Investments 
+                    <img id="investments_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction7()" inputmode="numeric" name="" id="investments" value=""  style="top: -7vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr" style="top: 58vh;">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="Insurance_label" for="Insurance">Insurance Premium 
+                    <img id="Insurance_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction8()" inputmode="numeric" name="" id="Insurance" value=""  style="top: -7vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr" style="top: 68vh;">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="Other_label" for="Other">Other Expense 
+                    <img id="Other_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction9()" inputmode="numeric" name="" id="Other" value=""  style="top: -10vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                
+            </div>
+        </div>
+
+        
+        <input type="submit" name="" id="income_middle_div5" value="Record" style="top: -83vh; left: 39vw;">
+    </div>
+
+    <div id="hr_right">
+        <p id="hr_right_para1">Hi Jitendra, You finishes</p>
+        <div id="hr_right_div1">
+            <img id="hr_right_div1_img" src="{% static "media/mes_hr2.png" %}" alt="">
+            <p id="hr_right_div1_para1">03/12</p>
+            <p id="hr_right_div1_para2">Measured</p>
+        </div>
+        <div id="hr_right_div2">
+            <p id="hr_right_div2_para1">Sync Google fit</p>
+            <a href=""><i id="hr_right_div2_icon" class="bi-arrow-repeat"></i></a>
+        </div>
+    </div>
+
+    
+    <script>
+        function myFunction1() {
+            document.getElementById("house_rent_label").style.fontSize = "1.5vh";
+            document.getElementById("house_rent_img").src = "";
+          }
+          function myFunction2() {
+            document.getElementById("utility_bill_label").style.fontSize = "1.5vh";
+            document.getElementById("utility_bill_img").src = "";
+          }
+          function myFunction3() {
+            document.getElementById("groceries_label").style.fontSize = "1.5vh";
+            document.getElementById("groceries_img").src = "";
+          }
+          function myFunction4() {
+            document.getElementById("travel_label").style.fontSize = "1.5vh";
+            document.getElementById("travel_img").src = "";
+          }
+          function myFunction5() {
+            document.getElementById("clothing_label").style.fontSize = "1.5vh";
+            document.getElementById("clothing_img").src = "";
+          }
+          function myFunction6() {
+            document.getElementById("education_label").style.fontSize = "1.5vh";
+            document.getElementById("education_img").src = "";
+          }
+          function myFunction7() {
+            document.getElementById("investments_label").style.fontSize = "1.5vh";
+            document.getElementById("investments_img").src = "";
+          }
+          function myFunction8() {
+            document.getElementById("Insurance_label").style.fontSize = "1.5vh";
+            document.getElementById("Insurance_img").src = "";
+          }
+          function myFunction9() {
+            document.getElementById("Other_label").style.fontSize = "1.5vh";
+            document.getElementById("Other_img").src = "";
+          }
+    </script>
+    
+    
+   
+
+</body>
+</html>
+
+

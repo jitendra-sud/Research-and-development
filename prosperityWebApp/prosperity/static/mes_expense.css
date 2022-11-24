@@ -1,0 +1,269 @@
+#expense_para1 {
+    position: absolute;
+    width: 21vw;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vh;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+    top: -172vh;
+    left: 39vw;
+}
+
+#expense_div1 {
+    position: absolute;
+    width: 23vw;
+    height: 79vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+    top: -167vh;
+    left: 39vw;
+}
+
+#house_rent {
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    border: 0px;
+    font-family: 'Poppins';
+    color: #5B6CAC;
+}
+
+#house_rent_label {
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: 1vh;
+    position: relative;
+    width: 23vw;
+}
+
+#house_rent_label img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+#expense_hr {
+    position: absolute;
+    width: 21vw;
+    height: 0px;
+    opacity: 0.1;
+    border: 1px solid #5B6CAC;
+    top: 7vh;
+    left: 1vw;
+}
+
+#expense_div1_hr {}
+
+#utility_bill {
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    border: 0px;
+    font-family: 'Poppins';
+    color: #5B6CAC;
+}
+
+#utility_bill_label {
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: -1vh;
+    position: relative;
+    width: 23vw;
+}
+
+#utility_bill_label img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+
+#groceries {
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    border: 0px;
+    font-family: 'Poppins';
+    color: #5B6CAC;
+}
+
+#groceries_label {
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: -2vh;
+    position: relative;
+    width: 23vw;
+}
+
+#groceries_label img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+
+#travel {
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    border: 0px;
+    font-family: 'Poppins';
+    color: #5B6CAC;
+}
+
+#travel_label {
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: -2.5vh;
+    position: relative;
+    width: 23vw;
+}
+
+#travel_label img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+#clothing {
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    border: 0px;
+    font-family: 'Poppins';
+    color: #5B6CAC;
+}
+
+#clothing_label {
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: -5.5vh;
+    position: relative;
+    width: 23vw;
+}
+
+#clothing_label img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+#education {
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    border: 0px;
+    font-family: 'Poppins';
+    color: #5B6CAC;
+}
+
+#education_label {
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: -5.5vh;
+    position: relative;
+    width: 23vw;
+}
+
+#education_label img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+
+
+#investments {
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    border: 0px;
+    font-family: 'Poppins';
+    color: #5B6CAC;
+}
+
+#investments_label {
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: -7.5vh;
+    position: relative;
+    width: 23vw;
+}
+
+#investments_label img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+
+
+#Insurance {
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    border: 0px;
+    font-family: 'Poppins';
+    color: #5B6CAC;
+}
+
+#Insurance_label {
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: -7.5vh;
+    position: relative;
+    width: 23vw;
+}
+
+#Insurance_label img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+
+#Other {
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    border: 0px;
+    font-family: 'Poppins';
+    color: #5B6CAC;
+}
+
+#Other_label {
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+    border: 0px;
+    top: -9.5vh;
+    position: relative;
+    width: 23vw;
+}
+
+#Other_label img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}

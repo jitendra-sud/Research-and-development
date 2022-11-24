@@ -116,47 +116,54 @@ def four(request):
 
 
 def mes_bmi(request):
-    return render(request, 'measures/bmi.html')
+    return render(request, 'measures/health/bmi.html')
 
 def mes_heartRate(request):
-    return render(request, 'measures/heartRate.html')
+    return render(request, 'measures/health/heartRate.html')
 
 def mes_sleep(request):
-    return render(request, 'measures/sleep.html')
+    return render(request, 'measures/health/sleep.html')
 
 def mes_waterIntake(request):
-    return render(request, 'measures/waterIntake.html')
+    return render(request, 'measures/health/waterIntake.html')
 
 def mes_calories(request):
-    return render(request, 'measures/calories.html')
+    return render(request, 'measures/health/calories.html')
 
 def mes_bp(request):
-    return render(request, 'measures/bp.html')
+    return render(request, 'measures/health/bp.html')
 
 def mes_bs(request):
-    return render(request, 'measures/bloodSugar.html')
+    return render(request, 'measures/health/bloodSugar.html')
 
 def mes_immunity(request):
-    return render(request, 'measures/immunity.html')
+    return render(request, 'measures/health/immunity.html')
 
 def mes_mentalHealth(request):
-    return render(request, 'measures/mentalHealth.html')
+    return render(request, 'measures/health/mentalHealth.html')
 
 def mes_eyeVision(request):
-    return render(request, 'measures/eyeVision.html')
+    return render(request, 'measures/health/eyeVision.html')
 
 def mes_eyeTest1(request):
-    return render(request, 'measures/eyeTest1.html')
+    return render(request, 'measures/health/eyeTest1.html')
 
 def mes_eyeTest2(request):
-    return render(request, 'measures/eyeTest2.html')
+    return render(request, 'measures/health/eyeTest2.html')
 
 def mes_eyeTest3(request):
-    return render(request, 'measures/eyeTest3.html')
+    return render(request, 'measures/health/eyeTest3.html')
 
 def mes_medication(request):
-    return render(request, 'measures/medication.html')
+    return render(request, 'measures/health/medication.html')
 
+
+
+def mes_income(request):
+    return render(request, 'measures/wealth/income.html')
+
+def mes_expense(request):
+    return render(request, 'measures/wealth/expense.html')
 # Create your views here.
 
 

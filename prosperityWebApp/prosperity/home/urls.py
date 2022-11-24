@@ -56,5 +56,8 @@ urlpatterns = [
     path("mes_eyeTest2",views.mes_eyeTest2, name = 'mes_eyeTest2'),
     path("mes_eyeTest3",views.mes_eyeTest3, name = 'mes_eyeTest3'),
     path("mes_medication",views.mes_medication, name = 'mes_medication'),
+
+    path("mes_income",views.mes_income, name = 'mes_income'),
+    path("mes_expense",views.mes_expense, name = 'mes_expense'),
     
 ]
