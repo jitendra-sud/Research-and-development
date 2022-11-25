@@ -65,7 +65,11 @@ urlpatterns = [
 
     path("mes_income",include('home.urls')),
     path("mes_expense",include('home.urls')),
-
+    path("mes_saving",include('home.urls')),
+    path("mes_RE",include('home.urls')),
+    path("mes_V",include('home.urls')),
+    path("mes_B",include('home.urls')),
+    path("mes_S",include('home.urls')),
 ]
 
 

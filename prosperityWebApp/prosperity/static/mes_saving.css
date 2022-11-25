@@ -1,0 +1,126 @@
+#saving_1 {
+    position: absolute;
+    width: 10vw;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vh;
+    line-height: 18px;
+    color: #5B6CAC;
+    top: 9vh;
+    left: 14.5vw;
+}
+
+#saving_hr1 {
+    position: absolute;
+    width: 23vw;
+    height: 0px;
+    opacity: 0.1;
+    border: 1px solid #5B6CAC;
+    top: -144vh;
+    left: 39vw;
+}
+
+#saving_div1 {
+    position: absolute;
+    top: -140vh;
+    left: 39vw;
+}
+
+#saving_div1_1 {
+    position: absolute;
+    width: 15vw;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vh;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+    text-decoration: none;
+}
+
+#saving_div1_2 {
+    position: absolute;
+    left: 21.5vw;
+}
+
+#saving_hr2 {
+    position: absolute;
+    width: 23vw;
+    height: 0px;
+    opacity: 0.1;
+    border: 1px solid #5B6CAC;
+    top: -136.5vh;
+    left: 39vw;
+}
+
+#saving_div2 {
+    position: absolute;
+    left: 39vw;
+    top: -132vh;
+}
+
+#saving_div2_1 {
+    position: absolute;
+    width: 15vw;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vh;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #5B6CAC;
+    text-decoration: none;
+}
+
+#flexCheckDefault{
+    position: absolute;
+    left: 22vw;
+    width: 3.5vh;
+    height: 3.5vh;
+    top: 0.5vh;
+    border: 2px #5B6CAC solid;
+}
+
+#newDiv{
+    position: absolute;
+    top: -138vh;
+    left: 39vw;
+    transition: display 1s;
+}
+
+#lowerDiv{
+    position: absolute;
+    top: 0vh;
+    transition: top 1s;
+}
+
+#dropdownMenuButton1{
+    position: absolute;
+    width: 23vw;
+    height: 7vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+    border: 0px;
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+}
+
+#dropdownMenuButton2{
+    position: absolute;
+    width: 23vw;
+    height: 7vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+    border: 0px;
+    color: #5B6CAC;
+    font-size: 2.3vh;
+    padding: 14px;
+}

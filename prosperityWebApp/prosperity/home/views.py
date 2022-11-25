@@ -164,6 +164,21 @@ def mes_income(request):
 
 def mes_expense(request):
     return render(request, 'measures/wealth/expense.html')
+
+def mes_saving(request):
+    return render(request, 'measures/wealth/saving.html')
+
+def mes_RE(request):
+    return render(request, 'measures/wealth/addRealEstate.html')
+
+def mes_V(request):
+    return render(request, 'measures/wealth/addVehicle.html')
+
+def mes_B(request):
+    return render(request, 'measures/wealth/addBond.html')
+
+def mes_S(request):
+    return render(request, 'measures/wealth/addStocks.html')
 # Create your views here.
 
 

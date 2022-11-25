@@ -59,5 +59,10 @@ urlpatterns = [
 
     path("mes_income",views.mes_income, name = 'mes_income'),
     path("mes_expense",views.mes_expense, name = 'mes_expense'),
+    path("mes_saving",views.mes_saving, name = 'mes_saving'),
+    path("mes_RE",views.mes_RE, name = 'mes_RE'),
+    path("mes_V",views.mes_V, name = 'mes_V'),
+    path("mes_B",views.mes_B, name = 'mes_B'),
+    path("mes_S",views.mes_S, name = 'mes_S'),
     
 ]

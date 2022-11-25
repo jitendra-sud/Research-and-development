@@ -9,6 +9,7 @@
     {% load static %} <link rel="stylesheet" href="{% static 'health.css' %}">
     {% load static %} <link rel="stylesheet" href="{% static 'mes_hr.css' %}">
     {% load static %} <link rel="stylesheet" href="{% static 'mes_income.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_saving.css' %}">
     <link rel="stylesheet" href="{% static 'genderDob.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -74,47 +75,52 @@
 
     <div id="income_middle" style=" position: absolute; top: 209vh;" >
         <div id="hr_middle_div1">
-            <p id="hr_middle_div1_para1">Income</p>
+            <p id="hr_middle_div1_para1" style="width: 18vw;">Add Stocks</p>
         </div>
 
-        <div id="income_middle_div2">
-            <p id="income_middle_div2_para1">Total Income:</p>
-            <p id="income_middle_div2_para2">₹ 76,500/-</p>
+        <div id="income_middle_div1" style="top: -167vh;">
+            <p id="income_middle_div1_para1">Stock Name</p>
+            <input type="text" id="dropdownMenuButton1" placeholder="HDFC 20th June 2022">
         </div>
 
-        <div id="income_middle_div1">
-            <p id="income_middle_div1_para1">Occupation Type</p>
-              <select id="dropdownMenuButton">
-                <a href=""><option value="Salaried" selected>Salaried</option></a>
-                <a href=""><option value="Business" >Business</option></a>
-                
-              </select>
+        <div id="income_middle_div1" style="top: -153vh;">
+            <p id="income_middle_div1_para1">Status</p>
+            <div class="grid-container" style="position: absolute; top:-28vh; left: -4vw;">
+                <select id="male_lable" class="form-select grid-item" multiple aria-label="multiple select example">
+                    <option id="male" value="1">Active</option>
+                </select>
+                <select id="female_lable" class="form-select grid-item" multiple aria-label="multiple select example">
+                    <option id="female" value="1">Inactive</option>
+                </select>
+            </div>
         </div>
 
-        <div id="income_middle_div3">
-            <p style=" position: absolute;width: 22vw;font-family: 'Poppins';font-style: normal;font-weight: 800; font-size: 2vh;line-height: 24px;
-            color: #5B6CAC;
-            top: -4vh;" id="selected"></p>
-            <input type="text" name="" id="income_middle_div3_input" value="in ₹">
+        <div id="income_middle_div1" style="top: -140vh;">
+            <p id="income_middle_div1_para1">Invested Amount</p>
+            <input inputmode="numeric" id="dropdownMenuButton1" placeholder="₹ Enter Amount">
+        </div> 
+
+        <div id="income_middle_div1" style="top: -126vh;">
+            <p id="income_middle_div1_para1">Buying Price</p>
+            <input inputmode="numeric" id="dropdownMenuButton1" placeholder="Price" style="width: 11vw;">
         </div>
 
-        <div id="income_middle_div4">
-            <p id="income_middle_div1_para1">Enter Anouther Income Source</p>
-            <label id="income_middle_div4_input" for="Business">Income From Business
-                <img src="{% static "media/plusss.png" %}" alt="">
-            </label>
-            <input type="text" hidden id="Business" name="Business">
-
-            {% comment %} <input type="text" name="" id="income_middle_div4_input" value="Income From Business"> 
-            <hr id="income_middle_div4_hr">
-            <input type="text" name="" id="income_middle_div4_input" value="Income From Investments">
-            <hr id="income_middle_div4_hr">
-            <input type="text" name="" id="income_middle_div4_input" value="Income From Rental Property"> {% endcomment %}
+        <div id="income_middle_div1" style="top: -126vh; left: 51vw;">
+            <p id="income_middle_div1_para1">Quantity</p>
+            <input inputmode="numeric"  id="dropdownMenuButton1" placeholder="Eg. 12" style="width: 11vw;">
         </div>
 
+        <div id="income_middle_div1" style="top: -112vh;">
+            <p id="income_middle_div1_para1">Buying Date</p>
+            <input type="date" id="dropdownMenuButton1" placeholder="" style="width: 11vw;">
+        </div> 
 
-        <hr id="income_middle_hr">
-        <input type="submit" name="" id="income_middle_div5" value="Record">
+        <div id="income_middle_div1" style="top: -98vh;">
+            <p id="income_middle_div1_para1">Current Returns</p>
+            <input inputmode="numeric" id="dropdownMenuButton1" placeholder="₹ Enter Amount">
+        </div>
+
+        <input type="submit" name="" id="income_middle_div5" value="Record" style="top: -86vh; left: 39vw;">
     </div>
 
     <div id="hr_right">
@@ -131,22 +137,7 @@
     </div>
 
     
-    <script>
-        
-
-        var selected = document.getElementById("dropdownMenuButton").value;
-        console.log(selected)
-        if(selected === "Business"){
-            document.getElementById("selected").innerHTML = "Enter Your Annual Income (Average)";
-            
-        }else if(selected === "Salaried"){
-            document.getElementById("selected").innerHTML = "Enter Your Monthly Income";
-
-        }
-        
-
-    </script>
-    
+   
 
    
 
