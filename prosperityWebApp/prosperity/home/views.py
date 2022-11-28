@@ -179,7 +179,31 @@ def mes_B(request):
 
 def mes_S(request):
     return render(request, 'measures/wealth/addStocks.html')
-# Create your views here.
+
+def mes_assets(request):
+    return render(request, 'measures/wealth/assets.html')
+
+def mes_inv(request):
+    return render(request, 'measures/wealth/investments.html')
+
+def mes_FD(request):
+    return render(request, 'measures/wealth/addFD.html')
+
+def mes_Mf(request):
+    return render(request, 'measures/wealth/addMF.html')
+
+def mes_PPF(request):
+    return render(request, 'measures/wealth/addPPF.html')
+
+def mes_digitalGold(request):
+    return render(request, 'measures/wealth/addDG.html')
+
+def mes_insurance(request):
+    return render(request, 'measures/wealth/addInsurance.html')
+
+
+
+#  Create your views here.
 
 
 

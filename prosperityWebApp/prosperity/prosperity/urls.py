@@ -70,6 +70,14 @@ urlpatterns = [
     path("mes_V",include('home.urls')),
     path("mes_B",include('home.urls')),
     path("mes_S",include('home.urls')),
+    path("mes_assets",include('home.urls')),
+    path("mes_inv",include('home.urls')),
+    path("mes_FD",include('home.urls')),
+    path("mes_Mf",include('home.urls')),
+    path("mes_PPF",include('home.urls')),
+    path("mes_digitalGold",include('home.urls')),
+    path("mes_insurance",include('home.urls')),
+
 ]
 
 

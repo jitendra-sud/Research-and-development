@@ -64,5 +64,17 @@ urlpatterns = [
     path("mes_V",views.mes_V, name = 'mes_V'),
     path("mes_B",views.mes_B, name = 'mes_B'),
     path("mes_S",views.mes_S, name = 'mes_S'),
+    path("mes_assets",views.mes_assets, name = 'mes_assets'),
+    path("mes_inv",views.mes_inv, name = 'mes_inv'),
+    path("mes_FD",views.mes_FD, name = 'mes_FD'),
+    path("mes_Mf",views.mes_Mf, name = 'mes_Mf'),
+    path("mes_PPF",views.mes_PPF, name = 'mes_PPF'),
+    path("mes_digitalGold",views.mes_digitalGold, name = 'mes_digitalGold'),
+    path("mes_insurance",views.mes_insurance, name = 'mes_insurance'),
     
+
 ]
+
+
+
+

@@ -9,7 +9,8 @@
     {% load static %} <link rel="stylesheet" href="{% static 'health.css' %}">
     {% load static %} <link rel="stylesheet" href="{% static 'mes_hr.css' %}">
     {% load static %} <link rel="stylesheet" href="{% static 'mes_income.css' %}">
-    {% load static %} <link rel="stylesheet" href="{% static 'mes_saving.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_expense.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_assets.css' %}">
     <link rel="stylesheet" href="{% static 'genderDob.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -75,57 +76,18 @@
 
     <div id="income_middle" style=" position: absolute; top: 209vh;" >
         <div id="hr_middle_div1">
-            <p id="hr_middle_div1_para1" style="width: 18vw;">Add Bonds</p>
+            <p id="hr_middle_div1_para1">Assets</p>
         </div>
 
-        <div id="income_middle_div1" style="top: -167vh;">
-            <p id="income_middle_div1_para1">Company Name</p>
-            <input type="text" id="dropdownMenuButton1" placeholder="HDFC 20th June 2022">
+        <p id="expense_para1">Track Your Assets</p>
+        
+        <div id="assets_div">
+            <a id="assets_div_bond" href="mes_B"><img id="assets_div_bond_img" src="{% static "media/mes_assetBond.png" %}" alt=""></a>
+            <a id="assets_div_re" href="mes_RE"><img id="assets_div_re_img" src="{% static "media/mes_asserRE.png" %}" alt=""></a>
+            <a id="assets_div_vehicle" href="mes_V"><img id="assets_div_vehicle_img" src="{% static "media/mes_asserVehicle.png" %}" alt=""></a>
+            <a id="assets_div_stock" href="mes_S"><img id="assets_div_stock_img" src="{% static "media/mes_asset_stock.png" %}" alt=""></a>
+
         </div>
-
-        <div id="income_middle_div1" style="top: -153vh;">
-            <p id="income_middle_div1_para1">Status</p>
-            <div class="grid-container" style="position: absolute; top:-28vh; left: -4vw;">
-                <select id="male_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                    <option id="male" value="1">Active</option>
-                </select>
-                <select id="female_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                    <option id="female" value="1">Inactive</option>
-                </select>
-            </div>
-        </div>
-
-        <div id="income_middle_div1" style="top: -140vh;">
-            <p id="income_middle_div1_para1">Invested Amount</p>
-            <input inputmode="numeric" id="dropdownMenuButton1" placeholder="₹ Enter Amount">
-        </div> 
-
-        <div id="income_middle_div1" style="top: -126vh;">
-            <p id="income_middle_div1_para1">Buying Date</p>
-            <input type="date" id="dropdownMenuButton1" placeholder="DD/MM/YYY" style="width: 11vw;">
-        </div>
-
-        <div id="income_middle_div1" style="top: -126vh; left: 51vw;">
-            <p id="income_middle_div1_para1">Interest Rate</p>
-            <input inputmode="numeric"  id="dropdownMenuButton1" placeholder="In %" style="width: 11vw;">
-        </div>
-
-        <div id="income_middle_div1" style="top: -112vh;">
-            <p id="income_middle_div1_para1">Current Return</p>
-            <input inputmode="numeric" id="dropdownMenuButton1" placeholder="₹ Enter Amount">
-        </div> 
-
-        <div id="income_middle_div1" style="top: -98vh;">
-            <p id="income_middle_div1_para1">Tenure</p>
-            <select name="Tenure" id="dropdownMenuButton1" style="width: 16vw;">
-                <option value="volvo">6 years</option>
-                <option value="saab">9 years</option>
-                <option value="opel">12 years</option>
-                <option value="audi" selected>15 years</option>
-              </select>
-        </div>
-
-        <input type="submit" name="" id="income_middle_div5" value="Record" style="top: -86vh; left: 39vw;">
     </div>
 
     <div id="hr_right">
@@ -142,8 +104,7 @@
     </div>
 
     
-   
-
+    
    
 
 </body>

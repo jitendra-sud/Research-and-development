@@ -75,15 +75,20 @@
 
     <div id="income_middle" style=" position: absolute; top: 209vh;" >
         <div id="hr_middle_div1">
-            <p id="hr_middle_div1_para1" style="width: 18vw;">Add Bonds</p>
+            <p id="hr_middle_div1_para1" style="width: 18vw;">Add Insurance</p>
         </div>
 
         <div id="income_middle_div1" style="top: -167vh;">
-            <p id="income_middle_div1_para1">Company Name</p>
-            <input type="text" id="dropdownMenuButton1" placeholder="HDFC 20th June 2022">
+            <p id="income_middle_div1_para1">Insurer</p>
+            <input type="text" id="dropdownMenuButton1" placeholder="SUD Life">
+        </div>
+        <div id="income_middle_div1" style="top: -153vh;">
+            <p id="income_middle_div1_para1">Plan</p>
+            <input type="text" id="dropdownMenuButton1" placeholder="ULIP">
         </div>
 
-        <div id="income_middle_div1" style="top: -153vh;">
+
+        <div id="income_middle_div1" style="top: -139vh;">
             <p id="income_middle_div1_para1">Status</p>
             <div class="grid-container" style="position: absolute; top:-28vh; left: -4vw;">
                 <select id="male_lable" class="form-select grid-item" multiple aria-label="multiple select example">
@@ -95,37 +100,43 @@
             </div>
         </div>
 
-        <div id="income_middle_div1" style="top: -140vh;">
-            <p id="income_middle_div1_para1">Invested Amount</p>
-            <input inputmode="numeric" id="dropdownMenuButton1" placeholder="₹ Enter Amount">
-        </div> 
-
-        <div id="income_middle_div1" style="top: -126vh;">
-            <p id="income_middle_div1_para1">Buying Date</p>
-            <input type="date" id="dropdownMenuButton1" placeholder="DD/MM/YYY" style="width: 11vw;">
+        <div style="position: relative; top: 22vh;">
+            
+            <div id="income_middle_div1" style="top: -153vh;">
+                <p id="income_middle_div1_para1">Invested</p>
+                <div class="grid-container" style="position: absolute; top:-28vh; left: -4vw;">
+                    <select id="male_lable" class="form-select grid-item" multiple aria-label="multiple select example">
+                        <option id="male" value="1">Year</option>
+                    </select>
+                    <select id="female_lable" class="form-select grid-item" multiple aria-label="multiple select example">
+                        <option id="female" value="1">Month</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div id="income_middle_div1" style="top: -140vh;">
+                <p id="income_middle_div1_para1">Annual Invested Amount</p>
+                <input inputmode="numeric" id="dropdownMenuButton1" placeholder="₹ Enter Amount">
+            </div> 
+    
+           
+            <div id="income_middle_div1" style="top: -125vh;">
+                <p id="income_middle_div1_para1">Annual Rate of Interest</p>
+                <input inputmode="numeric" id="dropdownMenuButton1" placeholder="Enter rate of interest %">
+            </div> 
+    
+            <div id="income_middle_div1" style="top: -110vh;">
+                <p id="income_middle_div1_para1">Tenure</p>
+                <select name="Tenure" id="dropdownMenuButton1" style="width: 16vw;">
+                    <option value="volvo">6 years</option>
+                    <option value="saab">9 years</option>
+                    <option value="opel">12 years</option>
+                    <option value="audi" selected>15 years</option>
+                  </select>
+            </div>
         </div>
 
-        <div id="income_middle_div1" style="top: -126vh; left: 51vw;">
-            <p id="income_middle_div1_para1">Interest Rate</p>
-            <input inputmode="numeric"  id="dropdownMenuButton1" placeholder="In %" style="width: 11vw;">
-        </div>
-
-        <div id="income_middle_div1" style="top: -112vh;">
-            <p id="income_middle_div1_para1">Current Return</p>
-            <input inputmode="numeric" id="dropdownMenuButton1" placeholder="₹ Enter Amount">
-        </div> 
-
-        <div id="income_middle_div1" style="top: -98vh;">
-            <p id="income_middle_div1_para1">Tenure</p>
-            <select name="Tenure" id="dropdownMenuButton1" style="width: 16vw;">
-                <option value="volvo">6 years</option>
-                <option value="saab">9 years</option>
-                <option value="opel">12 years</option>
-                <option value="audi" selected>15 years</option>
-              </select>
-        </div>
-
-        <input type="submit" name="" id="income_middle_div5" value="Record" style="top: -86vh; left: 39vw;">
+        <input type="submit" name="" id="income_middle_div5" value="Record" style="top: -70vh; left: 39vw;">
     </div>
 
     <div id="hr_right">
