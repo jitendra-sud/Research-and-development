@@ -1,0 +1,88 @@
+
+#house_rent_label_lia{
+    color: #5B6CAC;
+    padding: 14px;
+    border: 0px;
+    top: 0vh;
+    position: absolute;
+    width: 23vw;
+    font-size: 2.3vh;
+  }
+
+  #house_rent_label_lia img {
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+#house_rent_lia{
+    position: absolute;
+    left: 1vw;
+    border: 0px;
+}
+
+#utility_bill_label_lia{
+    color: #5B6CAC;
+    padding: 14px;
+    border: 0px;
+    top: 8vh;
+    position: absolute;
+    font-size: 2.3vh;
+    width: 23vw;
+}
+
+#utility_bill_label_lia img{
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+#utility_bill_lia{
+    position: absolute;
+    left: 1vw;
+    border: 0px;
+}
+
+#groceries_label_lia{
+    color: #5B6CAC;
+    padding: 14px;
+    border: 0px;
+    top: 16vh;
+    font-size: 2.3vh;
+    position: absolute;
+    width: 23vw;
+}
+
+#groceries_label_lia img{
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+#groceries_lia{
+    position: absolute;
+    left: 1vw;
+    border: 0px;
+}
+
+#travel_label_lia{
+    color: #5B6CAC;
+    padding: 14px;
+    border: 0px;
+    top: 24.5vh;
+    font-size: 2.3vh;
+    position: absolute;
+    width: 23vw;
+}
+
+#travel_label_lia img{
+    position: absolute;
+    left: 20vw;
+    top: 2vh;
+}
+
+#travel_lia{
+    position: absolute;
+    left: 1vw;
+    border: 0px;
+}

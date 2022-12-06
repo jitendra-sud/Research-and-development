@@ -1,0 +1,70 @@
+#liability_box{
+    position: absolute;
+    width: 23vw;
+    height: 33vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.1);
+    border-radius: 10px;
+    top: -153vh;
+    left: 39vw;
+}
+
+#house_rent_label_lia{
+    color: #5B6CAC;
+    padding: 14px;
+    border: 0px;
+    top: 0vh;
+    position: absolute;
+    width: 23vw;
+  }
+
+#house_rent_lia{
+    position: absolute;
+    left: 1vw;
+    border: 0px;
+}
+
+#utility_bill_label_lia{
+    color: #5B6CAC;
+    padding: 14px;
+    border: 0px;
+    top: 8vh;
+    position: absolute;
+    width: 23vw;
+}
+
+#utility_bill_lia{
+    position: absolute;
+    left: 1vw;
+    border: 0px;
+}
+
+#groceries_label_lia{
+    color: #5B6CAC;
+    padding: 14px;
+    border: 0px;
+    top: 16vh;
+    position: absolute;
+    width: 23vw;
+}
+
+#groceries_lia{
+    position: absolute;
+    left: 1vw;
+    border: 0px;
+}
+
+#travel_label_lia{
+    color: #5B6CAC;
+    padding: 14px;
+    border: 0px;
+    top: 24.5vh;
+    position: absolute;
+    width: 23vw;
+}
+
+#travel_lia{
+    position: absolute;
+    left: 1vw;
+    border: 0px;
+}

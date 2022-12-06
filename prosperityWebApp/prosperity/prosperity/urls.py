@@ -77,7 +77,8 @@ urlpatterns = [
     path("mes_PPF",include('home.urls')),
     path("mes_digitalGold",include('home.urls')),
     path("mes_insurance",include('home.urls')),
-
+    path("mes_ins",include('home.urls')),
+    path("mes_lia",include('home.urls')),
 ]
 
 

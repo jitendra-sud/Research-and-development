@@ -201,6 +201,12 @@ def mes_digitalGold(request):
 def mes_insurance(request):
     return render(request, 'measures/wealth/addInsurance.html')
 
+def mes_ins(request):
+    return render(request, 'measures/wealth/insurance.html')
+
+def mes_lia(request):
+    return render(request, 'measures/wealth/liability.html')
+
 
 
 #  Create your views here.

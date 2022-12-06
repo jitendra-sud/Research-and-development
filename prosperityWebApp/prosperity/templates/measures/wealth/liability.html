@@ -9,7 +9,11 @@
     {% load static %} <link rel="stylesheet" href="{% static 'health.css' %}">
     {% load static %} <link rel="stylesheet" href="{% static 'mes_hr.css' %}">
     {% load static %} <link rel="stylesheet" href="{% static 'mes_income.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_expense.css' %}">
     {% load static %} <link rel="stylesheet" href="{% static 'mes_saving.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_liability.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_liability1.css' %}">
+    {% load static %} <link rel="stylesheet" href="{% static 'mes_expense.css' %}">
     <link rel="stylesheet" href="{% static 'genderDob.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -75,68 +79,55 @@
 
     <div id="income_middle" style=" position: absolute; top: 209vh;" >
         <div id="hr_middle_div1">
-            <p id="hr_middle_div1_para1" style="width: 18vw;">Add Insurance</p>
+            <p id="hr_middle_div1_para1">Liabilities</p>
         </div>
 
         <div id="income_middle_div1" style="top: -167vh;">
-            <p id="income_middle_div1_para1">Insurer</p>
-            <input type="text" id="dropdownMenuButton1" placeholder="SUD Life">
+            <p id="income_middle_div1_para1" style="width: 22vw;">Credit Card Loan Amount</p>
+            <input type="text" id="dropdownMenuButton1" placeholder="In ₹">
         </div>
-        <div id="income_middle_div1" style="top: -153vh;">
-            <p id="income_middle_div1_para1">Plan</p>
-            <input type="text" id="dropdownMenuButton1" placeholder="ULIP">
-        </div>
-
-
-        <div id="income_middle_div1" style="top: -139vh;">
-            <p id="income_middle_div1_para1">Status</p>
-            <div class="grid-container" style="position: absolute; top:-28vh; left: -4vw;">
-                <select id="male_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                    <option id="male" value="1">Active</option>
-                </select>
-                <select id="female_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                    <option id="female" value="1">Inactive</option>
-                </select>
+        <p id="income_middle_div1_para1" style="width: 22vw;top: -157vh;left: 39vw;">Add Loans</p>
+        <div id="liability_box" style="height: 33vh;">
+            <div id="expense_div1_hr">
+                <label id="house_rent_label_lia" for="house_rent">Home
+                    <img id="house_rent_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction1()" inputmode="numeric" name="" id="house_rent_lia"  style="top: 4vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr">
             </div>
+
+            <div id="expense_div1_hr">
+                <label id="utility_bill_label_lia" for="utility_bill">Personal
+                    <img id="utility_bill_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction2()" inputmode="numeric" name="" id="utility_bill_lia" value=""  style="top: 12vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr" style="top: 15vh;">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="groceries_label_lia" for="groceries">Education 
+                    <img id="groceries_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction3()" inputmode="numeric" name="" id="groceries_lia" value=""  style="top: 20vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+                <hr id="expense_hr" style="top: 23vh;">
+            </div>
+
+            <div id="expense_div1_hr">
+                <label id="travel_label_lia" for="travel">Car 
+                    <img id="travel_img" src="{% static "media/plusss.png" %}" alt="">
+                </label>
+                <input onclick="myFunction4()" inputmode="numeric" name="" id="travel_lia" value=""  style="top: 29vh;  font-family: 'Poppins';
+                color: #5B6CAC;">
+            </div>
+
+          
         </div>
 
-        <div style="position: relative; top: 22vh;">
-            
-            <div id="income_middle_div1" style="top: -153vh;">
-                <p id="income_middle_div1_para1">Invested</p>
-                <div class="grid-container" style="position: absolute; top:-28vh; left: -4vw;">
-                    <select id="male_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                        <option id="male" value="1">Year</option>
-                    </select>
-                    <select id="female_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                        <option id="female" value="1">Month</option>
-                    </select>
-                </div>
-            </div>
-    
-            <div id="income_middle_div1" style="top: -140vh;">
-                <p id="income_middle_div1_para1">Annual Invested Amount</p>
-                <input inputmode="numeric" id="dropdownMenuButton1" placeholder="₹ Enter Amount">
-            </div> 
-    
-           
-            <div id="income_middle_div1" style="top: -125vh;">
-                <p id="income_middle_div1_para1">Annual Rate of Interest</p>
-                <input inputmode="numeric" id="dropdownMenuButton1" placeholder="Enter rate of interest %">
-            </div> 
-    
-            <div id="income_middle_div1" style="top: -110vh;">
-                <p id="income_middle_div1_para1">Tenure</p>
-                <select name="Tenure" id="dropdownMenuButton1" style="width: 16vw;">
-                    <option value="volvo">6 years</option>
-                    <option value="saab">9 years</option>
-                    <option value="opel">12 years</option>
-                    <option value="audi" selected>15 years</option>
-                  </select>
-            </div>
-        </div>
-
-        <input type="submit" name="" id="income_middle_div5" value="Record" style="top: -70vh; left: 39vw;">
+        
+        <input type="submit" name="" id="income_middle_div5" value="Record" style="top: -111vh; left: 39vw;">
     </div>
 
     <div id="hr_right">
@@ -153,8 +144,26 @@
     </div>
 
     
-   
-
+    <script>
+        function myFunction1() {
+            document.getElementById("house_rent_label_lia").style.fontSize = "1.5vh";
+            document.getElementById("house_rent_img").src = "";
+          }
+          function myFunction2() {
+            document.getElementById("utility_bill_label_lia").style.fontSize = "1.5vh";
+            document.getElementById("utility_bill_img").src = "";
+          }
+          function myFunction3() {
+            document.getElementById("groceries_label_lia").style.fontSize = "1.5vh";
+            document.getElementById("groceries_img").src = "";
+          }
+          function myFunction4() {
+            document.getElementById("travel_label_lia").style.fontSize = "1.5vh";
+            document.getElementById("travel_img").src = "";
+          }
+    </script>
+    
+    
    
 
 </body>

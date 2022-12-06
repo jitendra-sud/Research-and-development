@@ -1,0 +1,77 @@
+#lump_sum_lable {
+    position: absolute;
+    width: 6.5vw;
+    height: 6vh;
+    left: 4vw;
+    top: 28vh;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    border: 0px;
+    overflow-y: hidden;
+
+}
+
+#lump_sum {
+    appearance: none;
+    height: 6vh;
+    width: 6.5vw;
+    padding-top: 1.6vh;
+    color: #a662de;
+    font-size: 114%;
+    background: white;
+    font-weight: 700;
+}
+
+#year_lable {
+    position: absolute;
+    width: 6.5vw;
+    height: 6vh;
+    left: 11.5vw;
+    top: 28vh;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    border: 0px;
+    overflow-y: hidden;
+
+}
+
+#year {
+    appearance: none;
+    height: 6vh;
+    width: 6.5vw;
+    padding-top: 1.6vh;
+    color: #a662de;
+    font-size: 114%;
+    background: white;
+    font-weight: 700;
+}
+
+#month_lable {
+    position: absolute;
+    width: 6.5vw;
+    height: 6vh;
+    left: 11.5vw;
+    top: 28vh;
+    background: white;
+    box-shadow: 0px 4px 20px rgba(44, 88, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    border: 0px;
+    overflow-y: hidden;
+
+}
+
+#month {
+    appearance: none;
+    height: 6vh;
+    width: 6.5vw;
+    padding-top: 1.6vh;
+    color: #a662de;
+    font-size: 114%;
+    background: white;
+    font-weight: 700;
+}

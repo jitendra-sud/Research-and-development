@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %} <link rel="stylesheet" href="{% static 'profileDetails.css' %}">
-    {% load static %} <link rel="stylesheet" href="{% static 'mes_bmi.css' %}">
-    {% load static %} <link rel="stylesheet" href="{% static 'health.css' %}">
-    {% load static %} <link rel="stylesheet" href="{% static 'mes_hr.css' %}">
-    {% load static %} <link rel="stylesheet" href="{% static 'mes_income.css' %}">
-    {% load static %} <link rel="stylesheet" href="{% static 'mes_saving.css' %}">
+    <link rel="stylesheet" href="{% static 'mes_bmi.css' %}">
+    <link rel="stylesheet" href="{% static 'health.css' %}">
+    <link rel="stylesheet" href="{% static 'mes_hr.css' %}">
+    <link rel="stylesheet" href="{% static 'mes_income.css' %}">
+    <link rel="stylesheet" href="{% static 'mes_saving.css' %}">
     <link rel="stylesheet" href="{% static 'genderDob.css' %}">
+    <link rel="stylesheet" href="{% static 'addMF.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
@@ -64,11 +65,11 @@
             </div>
     
             <div id="bmi_left_bmi_div" style="top: -88vh; left: 18vw; width: 6vw; height: 2.3vh;">
-                <a href="mes_bp"> Liability </a>
+                <a href="mes_lia"> Liability </a>
             </div>
     
             <div id="bmi_left_bmi_div" style="top: -79vh; left: 18vw; width: 6vw; height: 2.3vh;">
-                <a href="mes_bs"> Insurance  </a>
+                <a href="mes_ins"> Insurance  </a>
             </div>
         </div>
     </div>  
@@ -98,24 +99,24 @@
         <div id="income_middle_div1" style="top: -140vh;">
             <p id="income_middle_div1_para1">Status</p>
             <div class="grid-container" style="position: absolute; top:-28vh; left: -4vw;">
-                <select id="male_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                    <option id="male" value="1">Lump Sum</option>
+                <select id="lump_sum_lable" onclick="blockDiv()" class="form-select grid-item" multiple aria-label="multiple select example">
+                    <option id="lump_sum" value="1">Lump Sum</option>
                 </select>
-                <select id="female_lable" onclick="showDiv()" class="form-select grid-item" multiple aria-label="multiple select example">
-                    <option id="female" value="1">Year</option>
+                <select id="year_lable" onclick="showDiv()" class="form-select grid-item" multiple aria-label="multiple select example">
+                    <option id="year" value="1">Year</option>
                 </select>
-                <select style="left: 19vw;" id="female_lable" class="form-select grid-item" multiple aria-label="multiple select example">
-                    <option id="female" value="1">Month</option>
+                <select style="left: 19vw;" id="month_lable" class="form-select grid-item" multiple aria-label="multiple select example">
+                    <option id="month" value="1">Month</option>
                 </select>
             </div>
         </div>
 
-        <div id="income_middle_div1" class="buyDate" style="top: -126vh;display: none;">
+        <div id="buyDate" style="top: -126vh;display: none; position: absolute; left: 39vw; transition: display 1s;">
             <p id="income_middle_div1_para1">Invested Date</p>
             <input type="date" id="dropdownMenuButton1" placeholder="DD/MM/YYY" style="width: 11vw;">
         </div>
 
-        <div id="income_middle_div1" class="InvAmnt" style="top: -126vh;">
+        <div id="InvAmnt" style="top: -126vh; position: absolute; left: 39vw; transition: top 1s;">
             <p id="income_middle_div1_para1">Invested Amount</p>
             <input inputmode="numeric" id="dropdownMenuButton1" placeholder="₹ Enter Amount">
         </div> 
@@ -123,7 +124,7 @@
       
 
 
-        <input type="submit" name="" id="income_middle_div5" value="Record" style="top: -86vh; left: 39vw;">
+        <input type="submit" name="" id="income_middle_div5" value="Record" style="top: -112vh; left: 39vw; transition: top 1s;">
     </div>
 
     <div id="hr_right">
@@ -141,9 +142,15 @@
 
     
    <script>
+        function blockDiv(){
+            document.getElementById("buyDate").style.display = "none";
+            document.getElementById("InvAmnt").style.top = "-126vh";
+            document.getElementById("income_middle_div5").style.top = "-112vh"
+        }
         function showDiv(){
-            document.getElementsByClassName("buyDate").style.display = "block";
-            document.getElementsByClassName("InvAmnt").style.top = "-100vh";
+            document.getElementById("buyDate").style.display = "block";
+            document.getElementById("InvAmnt").style.top = "-112vh";
+            document.getElementById("income_middle_div5").style.top = "-99vh"
         }
    </script>
 

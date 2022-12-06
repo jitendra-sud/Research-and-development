@@ -71,7 +71,8 @@ urlpatterns = [
     path("mes_PPF",views.mes_PPF, name = 'mes_PPF'),
     path("mes_digitalGold",views.mes_digitalGold, name = 'mes_digitalGold'),
     path("mes_insurance",views.mes_insurance, name = 'mes_insurance'),
-    
+    path("mes_ins",views.mes_ins, name = 'mes_ins'),
+    path("mes_lia",views.mes_lia, name = 'mes_lia'),
 
 ]
 
